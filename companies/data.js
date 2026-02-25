@@ -2218,5 +2218,151 @@ window.COMPANIES = [
   recentProjects: ["5G network rollout across Singapore", "Enterprise connectivity solutions expansion", "M1 digital products for SMEs", "SAP system modernisation as Keppel subsidiary"],
   whyApproach: "CEO Manjot Singh Mann is former Keppel CDO — highly tech-forward leader. Keppel group SAP integration opportunity.",
   entryAngle: "SAP for telco enterprise operations; AI consultation for network management; Keppel group synergy"
+},
+{
+  id: "keppel-infrastructure",
+  name: "Keppel Infrastructure",
+  sector: "Manufacturing",
+  subsector: "Utilities & Infrastructure",
+  employees: "~3,000",
+  hq: "1 HarbourFront Avenue, Singapore",
+  revenue: "~SGD 1.2B",
+  listed: "Part of Keppel Ltd (SGX: BN4)",
+  website: "https://www.keppel.com/en/businesses/infrastructure",
+  linkedin: "https://www.linkedin.com/company/keppel-infrastructure",
+  sapAngle: "Energy and utilities infrastructure — SAP PM for power plants, water treatment and waste management assets",
+  priority: "MED",
+  decisionMakers: [
+    { name: "CEO Keppel Infrastructure", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/keppel-infrastructure/people/" }
+  ],
+  recentProjects: ["Keppel Merlimau Cogen power plant", "Ulu Pandan water reclamation plant", "District cooling expansion Singapore", "SAP for utility asset management"],
+  whyApproach: "Utilities operator with critical SAP PM needs for power, water and waste assets.",
+  entryAngle: "SAP PM/EAM for utility asset management; SAP for project-based infrastructure"
+},
+{
+  id: "ncs-group",
+  name: "NCS Group",
+  sector: "Financial Services",
+  subsector: "IT Services & Digital Government",
+  employees: "~12,000",
+  hq: "5 Ang Mo Kio Street 62, Singapore",
+  revenue: "~SGD 1.5B",
+  listed: "Subsidiary of Singtel (SGX: Z74)",
+  website: "https://www.ncs.co",
+  linkedin: "https://www.linkedin.com/company/ncs-group",
+  sapAngle: "PARTNER OPPORTUNITY — NCS is Singapore's largest IT services firm, delivers SAP for government. Potential SI partner AND sub-contracting relationship.",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Ng Kuo Pin", title: "CEO", linkedin: "https://www.linkedin.com/in/ng-kuo-pin/" },
+    { name: "Head of SAP Practice", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/ncs-group/people/?keywords=SAP" }
+  ],
+  recentProjects: ["Singapore Government SAP implementations (multiple agencies)", "MOE ERP system", "CPF Board digital transformation", "NCS NEXT — digital innovation arm", "SAP Centre of Excellence for public sector"],
+  whyApproach: "NCS is the #1 IT services firm for Singapore government. SAP partnership with NCS opens entire government SAP pipeline.",
+  entryAngle: "SI partner — sub-contract SAP specialists to NCS for government projects; potential white-label arrangement"
+},
+{
+  id: "csc-singtel",
+  name: "Certis Cisco (Certis Group)",
+  sector: "Manufacturing",
+  subsector: "Security & Integrated Services",
+  employees: "~25,000",
+  hq: "2 Ayer Rajah Crescent, Singapore",
+  revenue: "~SGD 1.5B",
+  listed: "Private (Temasek subsidiary)",
+  website: "https://www.certisgroup.com",
+  linkedin: "https://www.linkedin.com/company/certis",
+  sapAngle: "Large workforce management — SAP SuccessFactors for 25,000 employees across security and integrated services",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Paul Chong", title: "Group CEO", linkedin: "" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/certis/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Technology-enabled security expansion", "Aviation security at Changi Airport", "SAP SuccessFactors HR for large workforce", "Smart security solutions rollout"],
+  whyApproach: "25,000-person security company — SAP SuccessFactors for large frontline workforce management.",
+  entryAngle: "SAP SuccessFactors for large workforce; HR analytics for security staff management"
+},
+{
+  id: "st-telemedia",
+  name: "ST Telemedia",
+  sector: "Manufacturing",
+  subsector: "Data Centres & Digital Infrastructure",
+  employees: "~2,000",
+  hq: "1 Temasek Avenue, Millenia Tower, Singapore",
+  revenue: "~SGD 1B+",
+  listed: "Private (Temasek subsidiary)",
+  website: "https://www.sttelemedia.com",
+  linkedin: "https://www.linkedin.com/company/st-telemedia",
+  sapAngle: "Data centre operator and digital infrastructure — SAP for asset management and operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Mark Robinson", title: "Group CEO", linkedin: "" },
+    { name: "CIO/CTO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/st-telemedia/people/?keywords=CIO" }
+  ],
+  recentProjects: ["STT GDC (Global Data Centres) expansion across APAC", "Singapore hyperscale data centre construction", "Digital infrastructure investment in India, Germany", "SAP for data centre asset management"],
+  whyApproach: "Fast-growing data centre company with complex asset and operations management. SAP PM/AM for data centre infrastructure.",
+  entryAngle: "SAP AM for data centre assets; SAP PM for critical infrastructure maintenance; AI consultation"
+},
+{
+  id: "ntt-data-singapore",
+  name: "NTT DATA Singapore",
+  sector: "Financial Services",
+  subsector: "IT Consulting & SI Partner",
+  employees: "~1,500 in SG",
+  hq: "One Raffles Quay, Singapore",
+  revenue: "Part of NTT Group (JPY 13T)",
+  listed: "Part of NTT Group (TYO: 9613)",
+  website: "https://sg.nttdata.com",
+  linkedin: "https://www.linkedin.com/company/ntt-data",
+  sapAngle: "PRIMARY SI PARTNER — SAP Global Strategic Service Partner, 30-year SAP relationship, sub-contracts specialist consultants regularly",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "SAP Practice Director SG", title: "NTT DATA Singapore", linkedin: "https://www.linkedin.com/company/ntt-data/people/?keywords=SAP Singapore" },
+    { name: "Delivery Manager APAC", title: "NTT DATA APAC", linkedin: "https://www.linkedin.com/company/ntt-data/people/?keywords=SAP Delivery APAC" }
+  ],
+  recentProjects: ["Multiple S/4HANA transformations across APAC financial services and manufacturing", "RISE with SAP implementations", "SAP Business AI deployments", "BTP platform implementations"],
+  whyApproach: "Intellect's #1 target SI partner. 30-year SAP relationship means constant overflow need for specialist consultants.",
+  entryAngle: "Sub-contracting partner: provide S/4HANA, BTP, module specialists for NTT DATA's project overflow"
+},
+{
+  id: "capgemini-singapore",
+  name: "Capgemini Singapore",
+  sector: "Financial Services",
+  subsector: "IT Consulting & SI Partner",
+  employees: "~2,000 in SG",
+  hq: "CapitaGreen, 138 Market Street, Singapore",
+  revenue: "Part of Capgemini (EUR 22B)",
+  listed: "Part of Capgemini SE (EPA: CAP)",
+  website: "https://www.capgemini.com/sg-en",
+  linkedin: "https://www.linkedin.com/company/capgemini",
+  sapAngle: "PRIMARY SI PARTNER — SAP Platinum Partner, APAC S/4HANA Centre of Excellence in Singapore, actively sub-contracts",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Head of SAP Practice APAC", title: "Capgemini Singapore", linkedin: "https://www.linkedin.com/company/capgemini/people/?keywords=SAP Practice Singapore" },
+    { name: "Singapore Country Head", title: "Capgemini Singapore", linkedin: "https://www.linkedin.com/company/capgemini/people/?keywords=Country Head Singapore" }
+  ],
+  recentProjects: ["S/4HANA transformations in manufacturing, utilities and financial services across APAC", "RISE with SAP advisory", "Intelligent Enterprise implementations", "SAP BTP development projects"],
+  whyApproach: "Capgemini has APAC SAP CoE in Singapore. Very active S/4HANA practice with constant need for specialist augmentation.",
+  entryAngle: "Sub-contracting: S/4HANA module specialists, BTP developers for Capgemini's APAC overflow"
+},
+{
+  id: "infosys-singapore",
+  name: "Infosys Singapore",
+  sector: "Financial Services",
+  subsector: "IT Consulting & SI Partner",
+  employees: "~3,000 in SG",
+  hq: "Marina Bay Financial Centre, Singapore",
+  revenue: "Part of Infosys (USD 18B)",
+  listed: "Part of Infosys Ltd (NYSE: INFY)",
+  website: "https://www.infosys.com/singapore",
+  linkedin: "https://www.linkedin.com/company/infosys",
+  sapAngle: "PRIMARY SI PARTNER — SAP Pinnacle Award winner, SAP CoE in Singapore, augmentation model well-established",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "SAP CoE Lead Singapore", title: "Infosys Singapore", linkedin: "https://www.linkedin.com/company/infosys/people/?keywords=SAP Singapore" },
+    { name: "Head of Manufacturing BU SG", title: "Infosys Singapore", linkedin: "https://www.linkedin.com/company/infosys/people/?keywords=manufacturing Singapore" }
+  ],
+  recentProjects: ["SAP S/4HANA implementations in banking, insurance, manufacturing across APAC", "SuccessFactors HR transformations", "SAP Ariba procurement programmes", "BTP and AI integrations"],
+  whyApproach: "SAP Pinnacle Award winner with established augmentation model. SAP CoE in Singapore regularly needs specialist support.",
+  entryAngle: "Sub-contracting: SAP specialists for Infosys's APAC delivery; white-label arrangement for S/4HANA projects"
 }
 ];
