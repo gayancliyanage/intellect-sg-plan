@@ -18,9 +18,9 @@ window.COMPANIES = [
   sapAngle: "S/4HANA multi-BU rollout, complex multi-subsidiary SAP estate across Aerospace, Defence, Smart City divisions",
   priority: "HIGH",
   decisionMakers: [
-    { name: "Vincent Chong", title: "President & Group CEO", linkedin: "https://www.linkedin.com/in/vincentchong/" },
-    { name: "Cedric Foo", title: "Chairman", linkedin: "" },
-    { name: "Group CIO/Head of IT", title: "To be confirmed via LinkedIn research", linkedin: "https://www.linkedin.com/company/st-engineering/people/?keywords=CIO" }
+    { name: "Jacob Tong", title: "Group Chief Information Officer (CIO)", linkedin: "https://www.linkedin.com/in/jacobtong/" },
+    { name: "Vincent Chong", title: "President & Group CEO", linkedin: "https://www.linkedin.com/company/st-engineering/people/?keywords=Vincent+Chong" },
+    { name: "Mervyn Tan", title: "Group COO (Technology & Innovation)", linkedin: "https://www.linkedin.com/company/st-engineering/people/?keywords=Mervyn+Tan" }
   ],
   recentProjects: [
     "Digital transformation across 4 business segments (Aerospace, Defence, Smart City, Digital Systems)",
