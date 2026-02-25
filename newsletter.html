@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAP Singapore Pulse | Newsletter Strategy — Intellect Consulting</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .nl-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #1a2f52 60%, #0d1f3c 100%);
+    color: var(--white);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .nl-hero::before {
+    content: '✉';
+    position: absolute;
+    font-size: 22rem;
+    opacity: 0.03;
+    top: -4rem;
+    right: -3rem;
+    pointer-events: none;
+    line-height: 1;
+  }
+  .nl-hero .hero-badge { margin-bottom: 1.2rem; }
+  .nl-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: 1rem; }
+  .nl-hero h1 span { color: var(--gold); }
+  .nl-hero p { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width: 620px; margin: 0 auto 2rem; }
+
+  .nl-meta-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .nl-meta-item {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    min-width: 130px;
+  }
+  .nl-meta-item .val { font-size: 1.4rem; font-weight: 800; color: var(--gold); }
+  .nl-meta-item .key { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.55); margin-top: 0.2rem; }
+
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 0;
+  }
+  .pillar-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-200);
+    border-top: 4px solid var(--gold);
+    transition: all 0.2s;
+  }
+  .pillar-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+  .pillar-num {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+  .pillar-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+  .pillar-card .pillar-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .pillar-card p { font-size: 0.85rem; color: var(--gray-600); margin-bottom: 0.75rem; }
+  .pillar-card .example { font-size: 0.8rem; background: var(--gray-100); padding: 0.5rem 0.75rem; border-radius: 6px; color: var(--navy); font-style: italic; }
+
+  .issue-preview {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    overflow: hidden;
+    max-width: 680px;
+    margin: 0 auto;
+    border: 1px solid var(--gray-200);
+  }
+  .issue-header {
+    background: var(--navy);
+    padding: 2rem 2.5rem;
+    color: var(--white);
+  }
+  .issue-header .issue-label {
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .issue-header h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 0.4rem; }
+  .issue-header .issue-meta { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
+  .issue-body { padding: 2rem 2.5rem; }
+  .issue-section { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--gray-200); }
+  .issue-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .issue-section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .issue-section h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+  .issue-section p { font-size: 0.875rem; color: var(--gray-600); line-height: 1.7; }
+  .issue-insight {
+    background: #fffbf0;
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.85rem;
+    color: var(--text);
+    margin-top: 0.75rem;
+    font-weight: 500;
+  }
+  .issue-cta {
+    background: var(--navy);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+  }
+  .issue-cta strong { color: var(--gold); }
+
+  .growth-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .growth-phase {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+  }
+  .growth-phase .phase-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .growth-phase h4 { font-weight: 800; color: var(--navy); margin-bottom: 0.25rem; font-size: 1.05rem; }
+  .growth-phase .target { font-size: 1.6rem; font-weight: 800; color: var(--navy); margin: 0.5rem 0; }
+  .growth-phase .target span { font-size: 0.8rem; font-weight: 400; color: var(--gray-600); }
+  .growth-phase ul { list-style: none; margin-top: 1rem; }
+  .growth-phase ul li { font-size: 0.82rem; color: var(--gray-600); padding: 0.25rem 0 0.25rem 1.2rem; position: relative; }
+  .growth-phase ul li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  .tool-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .tool-card .tool-icon { font-size: 2rem; }
+  .tool-card h4 { font-weight: 700; color: var(--navy); font-size: 1rem; }
+  .tool-card .tool-use { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); }
+  .tool-card p { font-size: 0.83rem; color: var(--gray-600); }
+  .tool-card .rec {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+  .tool-card .rec.starter {
+    background: rgba(201,168,76,0.12);
+    color: #7a5c10;
+  }
+
+  .acquire-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  .acquire-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-200);
+  }
+  .acquire-card .acq-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+  .acquire-card h4 { font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+  .acquire-card p { font-size: 0.85rem; color: var(--gray-600); margin-bottom: 0.75rem; }
+  .acquire-card .acq-target {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+  }
+
+  .subscribe-box {
+    background: linear-gradient(135deg, var(--navy) 0%, #112240 100%);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-box::before {
+    content: '📬';
+    position: absolute;
+    font-size: 12rem;
+    opacity: 0.04;
+    bottom: -2rem;
+    right: -1rem;
+    pointer-events: none;
+  }
+  .subscribe-box h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: 0.75rem; }
+  .subscribe-box h3 span { color: var(--gold); }
+  .subscribe-box p { color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 2rem; font-size: 0.95rem; }
+  .subscribe-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .subscribe-links a {
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .sub-btn-primary { background: var(--gold); color: var(--navy); }
+  .sub-btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .sub-btn-secondary { background: rgba(255,255,255,0.1); color: var(--white); border: 1px solid rgba(255,255,255,0.2); }
+  .sub-btn-secondary:hover { background: rgba(255,255,255,0.18); }
+
+  .checklist-styled { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .checklist-styled li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+  }
+  .checklist-styled li .ck-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.05rem; }
+  .checklist-styled li strong { color: var(--navy); }
+
+  @media (max-width: 640px) {
+    .issue-body { padding: 1.5rem; }
+    .issue-header { padding: 1.5rem; }
+    .subscribe-box { padding: 2rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Intellect <span>| SG Expansion Plan 2025</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="month1.html">Month 1</a></li>
+      <li><a href="month2.html">Month 2</a></li>
+      <li><a href="month3.html">Month 3</a></li>
+      <li><a href="targets.html">Target Accounts</a></li>
+      <li><a href="companies/index.html">Company Intel</a></li>
+      <li><a href="newsletter.html" class="active">Newsletter</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">☰</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="nl-hero">
+  <div class="hero-badge">📬 Brand Building — Track 3</div>
+  <h1><span>SAP Singapore Pulse</span><br>Newsletter Strategy</h1>
+  <p>A weekly newsletter to build Intellect's brand among Singapore's SAP community — CIOs, IT Directors, digital transformation leads, and SAP practitioners.</p>
+  <div class="nl-meta-strip">
+    <div class="nl-meta-item">
+      <div class="val">Weekly</div>
+      <div class="key">Frequency</div>
+    </div>
+    <div class="nl-meta-item">
+      <div class="val">500–700</div>
+      <div class="key">Words per issue</div>
+    </div>
+    <div class="nl-meta-item">
+      <div class="val">500+</div>
+      <div class="key">Subscribers — 6-month target</div>
+    </div>
+    <div class="nl-meta-item">
+      <div class="val">Tuesday</div>
+      <div class="key">Send day</div>
+    </div>
+    <div class="nl-meta-item">
+      <div class="val">30%+</div>
+      <div class="key">Open rate target</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY A NEWSLETTER -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Why This Works</div>
+      <h2>The Newsletter Advantage</h2>
+      <p>In Singapore's high-trust B2B market, people buy from those they already know and respect. A consistent newsletter builds that recognition before you ever send a cold email.</p>
+    </div>
+    <div class="cards-grid cards-3">
+      <div class="card card-gold-top">
+        <div class="card-icon">🧠</div>
+        <h3>Top-of-Mind Awareness</h3>
+        <p>When a CIO thinks "I need SAP help," you want Intellect to be the first name that comes to mind. Weekly presence in their inbox builds that association over 3–6 months.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-icon">🎯</div>
+        <h3>Warm Outreach Foundation</h3>
+        <p>Instead of cold emails, your outreach becomes: <em>"You may have seen our newsletter SAP Singapore Pulse — we cover topics relevant to your upcoming ECC migration."</em> Instant credibility.</p>
+      </div>
+      <div class="card card-gold-top">
+        <div class="card-icon">📈</div>
+        <h3>Compounding Asset</h3>
+        <p>Each issue adds to an archive. As subscribers forward it and it gets shared, your reach grows without extra effort. By Month 6, a good newsletter becomes your best sales tool.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT PILLARS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">What to Write About</div>
+      <h2>5 Content Pillars</h2>
+      <p>Rotate across these pillars each week. Readers stay subscribed because they get variety — not the same angle every issue.</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">⏰</div>
+        <div class="pillar-num">PILLAR 1</div>
+        <h3>The 2027 Countdown</h3>
+        <p>SAP ECC end-of-mainstream support is 2027. What does that mean? What should Singapore companies be doing right now? This is your #1 urgency hook.</p>
+        <div class="example">"18 months left: What Singapore's mid-market hasn't done yet about S/4HANA"</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🏭</div>
+        <div class="pillar-num">PILLAR 2</div>
+        <h3>Singapore Industry Spotlight</h3>
+        <p>One sector per issue: Manufacturing, Logistics, Food & Agri, Financial Services. What are the SAP trends specific to that sector in SG?</p>
+        <div class="example">"How Singapore's cold chain logistics companies are using SAP EWM to cut costs 22%"</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">💡</div>
+        <div class="pillar-num">PILLAR 3</div>
+        <h3>Practical SAP Tips</h3>
+        <p>One actionable insight practitioners can use immediately. "The thing your SAP consultant didn't tell you." Makes readers feel smarter after reading.</p>
+        <div class="example">"3 hidden SAP Fiori configurations that cut user training time in half"</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📰</div>
+        <div class="pillar-num">PILLAR 4</div>
+        <h3>Market News + Take</h3>
+        <p>Summarise one piece of SAP/digital transformation news from the week, then add Intellect's perspective. 150 words. This is where your opinion and expertise shows.</p>
+        <div class="example">"SAP raised RISE pricing 15% — here's how Singapore companies should respond"</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🏆</div>
+        <div class="pillar-num">PILLAR 5</div>
+        <h3>Case Study Snapshot</h3>
+        <p>A real implementation story (anonymised if needed). What was the problem, what did they do, what was the outcome. Proof that this works — the strongest selling tool you have.</p>
+        <div class="example">"How a Singapore brewery cut month-end close from 8 days to 2 with S/4HANA"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE ISSUE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Issue #1 Template</div>
+      <h2>What the First Issue Looks Like</h2>
+      <p>Use this as your launch issue. Establishes the format, introduces Intellect, and hooks readers for the next one.</p>
+    </div>
+    <div class="issue-preview">
+      <div class="issue-header">
+        <div class="issue-label">SAP Singapore Pulse — Issue #1</div>
+        <h3>Is Your SAP Ready for 2027? Most Singapore Companies Aren't.</h3>
+        <div class="issue-meta">Tuesday, [Date] · Estimated read: 4 min · By Intellect Consulting</div>
+      </div>
+      <div class="issue-body">
+
+        <div class="issue-section">
+          <div class="issue-section-label">👋 Welcome</div>
+          <h4>A quick hello from Intellect</h4>
+          <p>Every week, <strong>SAP Singapore Pulse</strong> lands in your inbox with one clear goal: help Singapore's SAP community make smarter decisions about their ERP. We're Intellect Consulting — an SAP implementation partner with deep roots in Food & Agriculture, Manufacturing, and Logistics. We built this newsletter because we kept having the same conversations with CIOs who hadn't heard the news yet. Now you will.</p>
+        </div>
+
+        <div class="issue-section">
+          <div class="issue-section-label">⏰ The Big Story</div>
+          <h4>18 Months to Deadline — Where Are Singapore Companies?</h4>
+          <p>SAP's mainstream support for ECC 6.0 ends in 2027. For most mid-sized Singapore enterprises, that means a migration project that takes 12–18 months — which means the window to start comfortably has already closed for some.</p>
+          <p style="margin-top:0.75rem;">A recent Gartner survey found 60% of SAP customers haven't started their S/4HANA journey. In Singapore's manufacturing and logistics sectors, the number is likely higher. The risk? Running unsupported ERP in a regulated market.</p>
+          <div class="issue-insight">💡 The companies starting now will have leverage in vendor negotiations and implementation resources. Those starting in 2026 will be competing for the same consultants at a premium.</div>
+        </div>
+
+        <div class="issue-section">
+          <div class="issue-section-label">🏭 Industry Spotlight: Food & Agriculture</div>
+          <h4>Why Wilmar, Olam and F&N Are Moving Fast</h4>
+          <p>Singapore's Food & Agri majors are among the most aggressive SAP adopters in APAC right now. The driver isn't just 2027 — it's supply chain visibility. Post-COVID, every food company in the region had a wake-up call about fragile supply chains. SAP's Integrated Business Planning (IBP) module has become the answer.</p>
+          <div class="issue-insight">🔎 Watch this space: SATS is undergoing a major SAP transformation post-acquisition of WFS. The project scope reportedly covers 60+ countries.</div>
+        </div>
+
+        <div class="issue-section">
+          <div class="issue-section-label">💡 Quick Tip</div>
+          <h4>Before You Start Your RISE with SAP Conversation</h4>
+          <p>RISE with SAP bundles S/4HANA Cloud + BTP + support into one contract. It looks simple. But before you sign, make sure your contract includes: (1) a clear SLA for hyperscaler availability, (2) data residency terms for Singapore/APAC compliance, and (3) migration support credits. Many companies discover these gaps after signing.</p>
+        </div>
+
+        <div class="issue-section">
+          <div class="issue-section-label">📬 Until Next Week</div>
+          <h4>What's coming in Issue #2</h4>
+          <p>Next week we're covering <strong>SAP in Singapore's logistics sector</strong> — specifically how CWT and YCH are using SAP EWM to handle the shift from bonded warehouse models. Plus: the three SAP partners you should actually be talking to in Singapore right now.</p>
+          <div class="issue-cta">
+            Know someone who should be reading this? <strong>Forward it.</strong> They can subscribe at <strong>intellectconsulting.io/newsletter</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBER ACQUISITION -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">How to Grow</div>
+      <h2>Getting Your First 500 Subscribers</h2>
+      <p>You don't need a big audience to start — you need the right audience. These channels will get you there in 3–4 months.</p>
+    </div>
+    <div class="acquire-grid">
+      <div class="acquire-card">
+        <div class="acq-icon">🔵</div>
+        <h4>LinkedIn — Your Engine</h4>
+        <p>Post the newsletter headline and key insight every Tuesday on both the Intellect company page and G's personal profile. Add a link to subscribe. One good post = 50–200 new subscribers.</p>
+        <p><strong>Pro tip:</strong> Write the "insight" from the newsletter as a standalone LinkedIn post first, then link to the full issue. Don't just post "new newsletter out."</p>
+        <div class="acq-target">Target: 200 subs from LinkedIn</div>
+      </div>
+      <div class="acquire-card">
+        <div class="acq-icon">🤝</div>
+        <h4>SAP Partner Network</h4>
+        <p>Share each issue in the SAP User Group Singapore Slack/community. Ask NTT Data, Infosys, and Capgemini contacts to forward to their internal SAP teams. SI partners are multipliers.</p>
+        <p><strong>Pro tip:</strong> Once you have 5 issues published, pitch an SI contact: "Would your team benefit from a SAP Singapore Pulse team subscription?" Get bulk forwards.</p>
+        <div class="acq-target">Target: 100 subs from SAP community</div>
+      </div>
+      <div class="acquire-card">
+        <div class="acq-icon">🎤</div>
+        <h4>Events & Conferences</h4>
+        <p>At every SGTech event, SAP NOW, or networking session: don't hand out business cards — offer a QR code to subscribe to the newsletter. It's a lower-friction ask than a sales follow-up.</p>
+        <p><strong>Pro tip:</strong> Create a simple landing page with the subscribe form. A QR code pointing to this page converts far better than asking for emails manually.</p>
+        <div class="acq-target">Target: 80 subs from events</div>
+      </div>
+      <div class="acquire-card">
+        <div class="acq-icon">📧</div>
+        <h4>Warm Outreach Invites</h4>
+        <p>Email your existing contacts, past prospects, and anyone who's ever attended a webinar or downloaded content from Intellect. Personal invite beats mass blast. "I thought of you specifically" converts at 3–5x higher rates.</p>
+        <p><strong>Pro tip:</strong> Send 20 personal invites per week for the first month. Yes, personally. It scales later.</p>
+        <div class="acq-target">Target: 80 subs from direct invites</div>
+      </div>
+      <div class="acquire-card">
+        <div class="acq-icon">🌐</div>
+        <h4>SEO + intellectconsulting.io</h4>
+        <p>Add a prominent newsletter signup box to intellectconsulting.io. Write 2–3 blog posts targeting "SAP consultant Singapore" and "S/4HANA migration Singapore" — include subscribe CTA in each. Organic traffic converts well.</p>
+        <p><strong>Pro tip:</strong> Publish the first 3 issues publicly on the website as blog posts to build SEO value before putting new issues behind email.</p>
+        <div class="acq-target">Target: 40 subs from website</div>
+      </div>
+      <div class="acquire-card">
+        <div class="acq-icon">🔄</div>
+        <h4>Referral Loop</h4>
+        <p>Add a "forward to a colleague" CTA at the bottom of every issue. Once you have 100 subscribers, add a referral incentive: "Refer 3 colleagues, get a free 30-min SAP readiness call with our team." Word-of-mouth in Singapore's tight SAP community is powerful.</p>
+        <p><strong>Pro tip:</strong> Acknowledge forwarders publicly ("Thanks to [Name] at [Company] for sharing this issue with their team!") — it incentivises more sharing.</p>
+        <div class="acq-target">Target: Word-of-mouth snowball</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Tech Stack</div>
+      <h2>Recommended Tools</h2>
+      <p>You don't need much to start. Here's what works at each stage.</p>
+    </div>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-icon">📬</div>
+        <div class="tool-use">Email Platform</div>
+        <h4>Mailchimp</h4>
+        <p>Free up to 500 subscribers. Easy to design, schedule, and analyse. Good deliverability. Best choice to start — upgrade to Mailchimp Standard when you hit 500.</p>
+        <span class="rec starter">✓ Start here</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📝</div>
+        <div class="tool-use">Alternative Platform</div>
+        <h4>Substack</h4>
+        <p>Free forever. Built-in discovery network — other Substack readers can find and subscribe. If you want to grow organically with less effort, Substack has a built-in audience engine.</p>
+        <span class="rec" style="background:#e8eaf6;color:#283593;">◎ Consider if LinkedIn-first</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🎨</div>
+        <div class="tool-use">Design</div>
+        <h4>Canva</h4>
+        <p>Create a newsletter header image in Intellect's navy + gold brand colours. Takes 30 minutes once, reuse every week. Makes every issue look polished and consistent.</p>
+        <span class="rec starter">✓ Free tier is enough</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <div class="tool-use">Analytics</div>
+        <h4>Built-in + UTM Links</h4>
+        <p>Use Mailchimp's open/click analytics. Add UTM parameters to all links back to your website so you can see which newsletter issues drive website visits and enquiries in Google Analytics.</p>
+        <span class="rec starter">✓ Free</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🔗</div>
+        <div class="tool-use">Subscribe Landing Page</div>
+        <h4>Carrd or Mailchimp Landing Page</h4>
+        <p>A single-page site at a clean URL (e.g. intellectconsulting.io/pulse) with: newsletter name, what subscribers get, sample issue preview, email signup box. This is your QR code destination at events.</p>
+        <span class="rec starter">✓ Carrd free plan works</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-use">Writing Assistance</div>
+        <h4>Claude / ChatGPT</h4>
+        <p>Use AI to draft first cuts from bullet points, summarise SAP news, generate headline options. Estimate: AI drafting + your editing = 90 minutes per issue instead of 3 hours.</p>
+        <span class="rec" style="background:#f3e5f5;color:#6a1b9a;">⚡ Time saver</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 90 DAY GROWTH PLAN -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Roadmap</div>
+      <h2>90-Day Newsletter Rollout</h2>
+      <p>From zero to a newsletter your prospects actually look forward to.</p>
+    </div>
+    <div class="growth-track">
+      <div class="growth-phase">
+        <div class="phase-label">Month 1 — Launch</div>
+        <h4>Build the Foundation</h4>
+        <div class="target">0 → 80 <span>subscribers</span></div>
+        <ul>
+          <li>Set up Mailchimp or Substack</li>
+          <li>Design header in brand colours</li>
+          <li>Write Issues #1–4 (one per week)</li>
+          <li>Send 20 personal invites per week</li>
+          <li>Post newsletter highlights on LinkedIn</li>
+          <li>Add subscribe link to all email signatures</li>
+          <li>Publish subscribe landing page</li>
+        </ul>
+      </div>
+      <div class="growth-phase">
+        <div class="phase-label">Month 2 — Grow</div>
+        <h4>Amplify Distribution</h4>
+        <div class="target">80 → 200 <span>subscribers</span></div>
+        <ul>
+          <li>Share in SAP User Group Singapore</li>
+          <li>Share with NTT Data / Infosys contacts</li>
+          <li>Attend 1 SGTech event, pitch newsletter</li>
+          <li>Write a guest LinkedIn article linking to the newsletter</li>
+          <li>Add newsletter CTA to intellectconsulting.io</li>
+          <li>Introduce referral incentive</li>
+        </ul>
+      </div>
+      <div class="growth-phase">
+        <div class="phase-label">Month 3 — Establish</div>
+        <h4>Build Authority</h4>
+        <div class="target">200 → 500 <span>subscribers</span></div>
+        <ul>
+          <li>Pitch Business Times / CIO Asia for a quote</li>
+          <li>Run a LinkedIn Live: "SAP Singapore 2027 Readiness"</li>
+          <li>Invite a guest CIO voice in one issue</li>
+          <li>Survey subscribers: what topics do you want?</li>
+          <li>Repurpose top issues as SEO blog posts</li>
+          <li>Use newsletter list for event invites & outreach</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-box" style="margin-top:2rem;">
+      <h4>🎯 The Payoff by Month 6</h4>
+      <p>With 500 engaged subscribers — CIOs, IT Directors, SAP practitioners — your cold email becomes a warm email: <em>"You may already be reading SAP Singapore Pulse. We're Intellect, the team behind it. We're reaching out because..."</em> That email converts at 5–10x the rate of a cold outreach with no context.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LAUNCH CHECKLIST -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Action Plan</div>
+      <h2>Launch Checklist</h2>
+      <p>Everything you need to do before sending Issue #1. Most of this is a one-time setup.</p>
+    </div>
+    <div style="max-width:720px; margin:0 auto;">
+      <ul class="checklist-styled">
+        <li><span class="ck-icon">☐</span><div><strong>Choose platform:</strong> Sign up for Mailchimp (free) or Substack — decide based on whether you want email-first (Mailchimp) or discovery-first (Substack)</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Design the header:</strong> Create a reusable newsletter banner in Canva using navy (#0A1628) + gold (#C9A84C). Include "SAP Singapore Pulse" and "By Intellect Consulting"</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Write Issue #1:</strong> Use the template above. Aim for 500–600 words. Include the 2027 urgency hook, one industry insight, one practical tip, and a preview of next issue</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Set up subscribe landing page:</strong> Create a page at intellectconsulting.io/pulse (or use Mailchimp's free landing page builder). Add a QR code for events</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Update email signatures:</strong> All team members add "📬 SAP Singapore Pulse — Subscribe free at [link]" to their email signatures</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Send 20 personal invites:</strong> Write a short personal note to 20 existing contacts inviting them to be founding subscribers. Not a mass blast — actual personal emails</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Schedule the send:</strong> Pick a consistent day (Tuesday is optimal for B2B). Morning 8–9am Singapore time gets highest open rates</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Plan first 4 issues:</strong> Write topic and headline for Issues #1–4 before you launch. Having a pipeline prevents writer's block and keeps you consistent</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>LinkedIn announcement:</strong> Post on G's personal profile and Intellect company page: "We're launching SAP Singapore Pulse — a weekly newsletter for Singapore's SAP community. Issue #1 drops Tuesday. Subscribe here: [link]"</div></li>
+        <li><span class="ck-icon">☐</span><div><strong>Set success metrics:</strong> Track weekly: subscriber count, open rate (target 30%+), click rate (target 5%+), new subscribers per issue. Review monthly.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE CTA -->
+<section class="section">
+  <div class="container">
+    <div class="subscribe-box">
+      <h3>Launch <span>SAP Singapore Pulse</span></h3>
+      <p>The newsletter is the brand. Every CIO who subscribes is a warm prospect. Start publishing, stay consistent, and let the list become your best sales asset.</p>
+      <div class="subscribe-links">
+        <a href="https://mailchimp.com" target="_blank" class="sub-btn-primary">Set Up on Mailchimp →</a>
+        <a href="https://substack.com" target="_blank" class="sub-btn-secondary">Or Try Substack</a>
+        <a href="month1.html" class="sub-btn-secondary">← Back to Month 1 Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Overview</a>
+    <a href="month1.html">Month 1</a>
+    <a href="month2.html">Month 2</a>
+    <a href="month3.html">Month 3</a>
+    <a href="targets.html">Target Accounts</a>
+    <a href="companies/index.html">Company Intel</a>
+    <a href="newsletter.html">Newsletter</a>
+  </div>
+  <p>Intellect Consulting SG Expansion Plan · <a href="https://intellectconsulting.io" target="_blank">intellectconsulting.io</a></p>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+</body>
+</html>
