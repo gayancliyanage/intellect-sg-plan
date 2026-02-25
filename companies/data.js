@@ -1167,5 +1167,1056 @@ window.COMPANIES = [
   ],
   whyApproach: "Largest public health cluster needing specialist SAP support. GeBIZ procurement path. Government credibility builder.",
   entryAngle: "SAP HR specialist for healthcare; SAP Finance for public health cluster; GeBIZ tender path"
+},
+
+// ─── ADDITIONAL MANUFACTURING ───
+{
+  id: "pan-united-corporation",
+  name: "Pan-United Corporation",
+  sector: "Manufacturing",
+  subsector: "Cement, Concrete & Port Services",
+  employees: "~2,500",
+  hq: "10 Anson Road, International Plaza, Singapore",
+  revenue: "~SGD 500M",
+  listed: "SGX: P52",
+  website: "https://www.pan-united.com.sg",
+  linkedin: "https://www.linkedin.com/company/pan-united-corporation",
+  sapAngle: "Manufacturing company with concrete and cement operations — SAP PP/QM for production management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Patrick Ng", title: "Group CEO", linkedin: "" },
+    { name: "IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/pan-united-corporation/people/?keywords=IT" }
+  ],
+  recentProjects: ["Ready-mixed concrete digitalisation", "Port operations technology upgrade", "ERP system modernisation for manufacturing"],
+  whyApproach: "SGX manufacturer with ongoing ERP modernisation needs across construction materials and port services.",
+  entryAngle: "SAP PP/QM for concrete manufacturing; SAP PM for port equipment maintenance"
+},
+{
+  id: "seatrium",
+  name: "Seatrium",
+  sector: "Manufacturing",
+  subsector: "Offshore & Marine Engineering",
+  employees: "~15,000",
+  hq: "29 Tuas Crescent, Singapore",
+  revenue: "~SGD 7B",
+  listed: "SGX: S51",
+  website: "https://www.seatrium.com",
+  linkedin: "https://www.linkedin.com/company/seatrium",
+  sapAngle: "Post-Sembcorp Marine + Keppel O&M merger — major SAP integration of two legacy systems",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Chris Ong", title: "President & CEO", linkedin: "https://www.linkedin.com/in/chris-ong-seatrium/" },
+    { name: "Group CIO", title: "Post-merger IT leadership", linkedin: "https://www.linkedin.com/company/seatrium/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Seatrium brand launch post-merger (2023)", "Offshore wind installation vessel construction", "SAP system integration from Sembcorp Marine + Keppel O&M", "Digital shipyard programme"],
+  whyApproach: "Brand new company formed from merger — SAP integration of two complex legacy ERP systems is a live, urgent project.",
+  entryAngle: "SAP S/4HANA integration post-merger; SAP PS for project-based engineering; specialist augmentation"
+},
+{
+  id: "micro-mechanics",
+  name: "Micro-Mechanics",
+  sector: "Manufacturing",
+  subsector: "Semiconductor Precision Tools",
+  employees: "~1,000",
+  hq: "29 Woodlands Industrial Park E1, Singapore",
+  revenue: "~SGD 65M",
+  listed: "SGX: 5DD",
+  website: "https://www.micro-mechanics.com",
+  linkedin: "https://www.linkedin.com/company/micro-mechanics",
+  sapAngle: "Precision tool manufacturer for semiconductor — SAP QM for quality-critical manufacturing",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Christopher Borch", title: "CEO & Executive Director", linkedin: "" },
+    { name: "IT Manager", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/micro-mechanics/people/" }
+  ],
+  recentProjects: ["Semiconductor tooling expansion in Malaysia and Philippines", "Quality management system upgrade", "ERP modernisation"],
+  whyApproach: "Precision manufacturer with quality-critical processes. SAP QM is essential for semiconductor tool compliance.",
+  entryAngle: "SAP QM implementation; multi-country rollout for Malaysia/Philippines facilities"
+},
+{
+  id: "valuetronics",
+  name: "Valuetronics Holdings",
+  sector: "Manufacturing",
+  subsector: "Electronics Manufacturing",
+  employees: "~3,500",
+  hq: "1 Yishun Industrial Street 1, Singapore",
+  revenue: "~SGD 360M",
+  listed: "SGX: BN2",
+  website: "https://www.valuetronics.com",
+  linkedin: "https://www.linkedin.com/company/valuetronics",
+  sapAngle: "EMS company moving manufacturing from China to Vietnam — ERP rollout for new facility",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Ricky Tse", title: "CEO", linkedin: "" },
+    { name: "IT Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/valuetronics/people/?keywords=IT" }
+  ],
+  recentProjects: ["Vietnam manufacturing facility setup", "China-plus-one supply chain diversification", "ERP system for Vietnam factory"],
+  whyApproach: "Active China+1 manufacturing move to Vietnam creates new ERP setup need — classic Intellect rollout opportunity.",
+  entryAngle: "SAP rollout for Vietnam factory; multi-country manufacturing ERP"
+},
+{
+  id: "breadtalk-group",
+  name: "BreadTalk Group",
+  sector: "Food & Agriculture",
+  subsector: "Bakery, Food & Beverage Retail",
+  employees: "~8,000",
+  hq: "30 Tai Seng Street, Singapore",
+  revenue: "~SGD 600M",
+  listed: "SGX: CTN (delisted 2022, now private)",
+  website: "https://www.breadtalk.com",
+  linkedin: "https://www.linkedin.com/company/breadtalk-group-limited",
+  sapAngle: "Food retail chain with 1,000+ outlets across Asia needing SAP for finance and operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "George Quek", title: "Chairman & Founder", linkedin: "" },
+    { name: "Group CIO/IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/breadtalk-group-limited/people/?keywords=IT" }
+  ],
+  recentProjects: ["Toast Box and Din Tai Fung franchise expansion", "F&B digital ordering platform", "ERP for retail operations management", "Regional franchise system upgrade"],
+  whyApproach: "1,000+ outlet F&B chain needing robust ERP for franchise management across Asia.",
+  entryAngle: "SAP for retail franchise management; SAP finance for multi-country F&B operations"
+},
+{
+  id: "jumbo-group",
+  name: "Jumbo Group",
+  sector: "Food & Agriculture",
+  subsector: "Restaurant & F&B",
+  employees: "~2,000",
+  hq: "1 Harbourfront Place, Singapore",
+  revenue: "~SGD 200M",
+  listed: "SGX: 42R",
+  website: "https://www.jumbogroup.sg",
+  linkedin: "https://www.linkedin.com/company/jumbo-group",
+  sapAngle: "Restaurant group expanding across Asia — SAP for F&B operations and franchise management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Ang Kiam Meng", title: "Group CEO", linkedin: "" },
+    { name: "IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/jumbo-group/people/" }
+  ],
+  recentProjects: ["China expansion (Shanghai, Beijing) for Jumbo Seafood", "Digital ordering and loyalty platform", "Restaurant management system upgrade"],
+  whyApproach: "Growing restaurant chain expanding to China — ERP and franchise management systems needed.",
+  entryAngle: "SAP for restaurant operations; ERP for China franchise management"
+},
+{
+  id: "global-logistic-properties",
+  name: "GLP (Global Logistic Properties)",
+  sector: "Logistics",
+  subsector: "Logistics Real Estate & Supply Chain",
+  employees: "~700 HQ staff",
+  hq: "50 Science Park Road, Singapore",
+  revenue: "~USD 900M+ (AUM USD 120B)",
+  listed: "Private (delisted 2018)",
+  website: "https://www.glp.com",
+  linkedin: "https://www.linkedin.com/company/glp",
+  sapAngle: "Logistics real estate giant managing 100M+ sqm of warehouses — SAP RE-FX and operations",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Ming Mei", title: "Co-Founder & CEO", linkedin: "https://www.linkedin.com/in/ming-mei-glp/" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/glp/people/?keywords=CIO" }
+  ],
+  recentProjects: ["GLP Pte platform expansion — Japan, China, Europe, Brazil", "Data centre business launch in Singapore", "Logistics technology (GLPTech) investment arm", "SAP for global property management"],
+  whyApproach: "World's largest logistics real estate company headquartered in Singapore. SAP RE-FX for massive warehouse portfolio.",
+  entryAngle: "SAP RE-FX for logistics real estate; SAP S/4HANA for fund management; AI consultation for smart warehouse"
+},
+{
+  id: "apl-logistics",
+  name: "APL Logistics",
+  sector: "Logistics",
+  subsector: "Supply Chain Management",
+  employees: "~5,000",
+  hq: "300 Beach Road, Singapore",
+  revenue: "~USD 1.5B",
+  listed: "Subsidiary of Kintetsu World Express",
+  website: "https://www.apllogistics.com",
+  linkedin: "https://www.linkedin.com/company/apl-logistics",
+  sapAngle: "Global supply chain company with active SAP S/4HANA programme — CIO Hakan Yaren leading transformation",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "James McCall", title: "CEO", linkedin: "" },
+    { name: "Hakan Yaren", title: "Chief Information Officer", linkedin: "https://www.linkedin.com/in/hakanyaren/" }
+  ],
+  recentProjects: ["SAP S/4HANA global transformation (CIO Hakan Yaren keynote at Axway Summit)", "Supply chain visibility platform", "E-commerce fulfilment expansion", "APAC digital hub in Singapore"],
+  whyApproach: "CIO Hakan Yaren is a confirmed SAP S/4HANA leader (keynote speaker). Active transformation creates direct specialist need.",
+  entryAngle: "SAP S/4HANA specialist augmentation under CIO Hakan Yaren; APAC rollout support"
+},
+{
+  id: "vopak-singapore",
+  name: "Vopak Singapore",
+  sector: "Logistics",
+  subsector: "Tank Storage & Terminals",
+  employees: "~600 in SG",
+  hq: "10 Pasir Panjang Road, Singapore",
+  revenue: "Part of Royal Vopak (EUR 1.6B globally)",
+  listed: "Part of Royal Vopak (AMS: VPK)",
+  website: "https://www.vopak.com/singapore",
+  linkedin: "https://www.linkedin.com/company/vopak",
+  sapAngle: "Tank terminal operator with complex SAP for hazmat inventory, HSE compliance, and operations management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Frits Eulderink", title: "CEO Royal Vopak", linkedin: "" },
+    { name: "MD Singapore", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/vopak/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["LNG terminal expansion at Singapore (Jurong Island)", "Data platform for tank utilisation optimisation", "SAP for HSE compliance management", "Energy transition storage for hydrogen"],
+  whyApproach: "Dutch tank storage leader with Singapore's largest chemical terminal. SAP for hazmat compliance is critical.",
+  entryAngle: "SAP EHS (Environment, Health & Safety); SAP PM for terminal equipment maintenance"
+},
+{
+  id: "agility-logistics",
+  name: "Agility Logistics Singapore",
+  sector: "Logistics",
+  subsector: "Freight Forwarding & Contract Logistics",
+  employees: "~1,500 in SG",
+  hq: "3 Changi Business Park Vista, Singapore",
+  revenue: "Part of Agility (KWD 1B+)",
+  listed: "Part of Agility KSCP (Boursa Kuwait)",
+  website: "https://www.agility.com/en/singapore",
+  linkedin: "https://www.linkedin.com/company/agility",
+  sapAngle: "Middle East logistics giant with Singapore as APAC hub — SAP TM for freight and WM for contract logistics",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Tarek Sultan", title: "Vice Chairman & CEO", linkedin: "" },
+    { name: "Regional IT Lead APAC", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/agility/people/?keywords=CIO APAC" }
+  ],
+  recentProjects: ["National Industries Group divestment — becoming pure-play logistics", "SAP TM implementation for freight forwarding", "Singapore government logistics contracts", "Defence logistics expansion"],
+  whyApproach: "Kuwait-headquartered logistics company with Singapore as APAC hub. Active SAP TM implementation.",
+  entryAngle: "SAP TM specialist; SAP WM for Singapore contract logistics operations"
+},
+{
+  id: "pacific-international-lines",
+  name: "Pacific International Lines (PIL)",
+  sector: "Logistics",
+  subsector: "Container Shipping",
+  employees: "~5,000",
+  hq: "PIL Building, 140 Cecil Street, Singapore",
+  revenue: "~SGD 3B",
+  listed: "Private",
+  website: "https://www.pilship.com",
+  linkedin: "https://www.linkedin.com/company/pacific-international-lines",
+  sapAngle: "Singapore's largest home-grown container shipping line — SAP for complex shipping finance and operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Lars Kastrup", title: "President & CEO", linkedin: "" },
+    { name: "IT Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/pacific-international-lines/people/?keywords=IT" }
+  ],
+  recentProjects: ["Fleet expansion — 100 newbuild container vessels", "Digital freight booking platform", "SAP S/4HANA for shipping finance", "Port agency network expansion"],
+  whyApproach: "Home-grown Singapore shipping line undergoing major digital transformation post-restructuring.",
+  entryAngle: "SAP S/4HANA Finance for shipping operations; SAP TM for container management"
+},
+
+// ─── ADDITIONAL FOOD & AGRI ───
+{
+  id: "super-group",
+  name: "Super Group",
+  sector: "Food & Agriculture",
+  subsector: "Instant Beverages & Food",
+  employees: "~3,000",
+  hq: "Acquired by JDE Peet's; SG operations remain",
+  revenue: "~SGD 400M",
+  listed: "Delisted (acquired by JDE Peet's)",
+  website: "https://www.super.com.sg",
+  linkedin: "https://www.linkedin.com/company/super-coffeemix-manufacturing",
+  sapAngle: "Instant coffee/beverage manufacturer — SAP PP for food production; part of JDE global SAP rollout",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Plant Manager / IT Head", title: "JDE Peet's Singapore", linkedin: "https://www.linkedin.com/company/jde-peets/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["JDE Peet's global SAP S/4HANA rollout (includes Singapore)", "Manufacturing plant modernisation", "Product line expansion in Asia"],
+  whyApproach: "Part of JDE Peet's global SAP transformation. Singapore production site needs local SAP specialist support.",
+  entryAngle: "SAP PP for instant food/beverage production; JDE Peet's global rollout support"
+},
+{
+  id: "delfi-limited",
+  name: "Delfi Limited",
+  sector: "Food & Agriculture",
+  subsector: "Confectionery & Chocolate",
+  employees: "~3,500",
+  hq: "9 Battery Road, Singapore",
+  revenue: "~SGD 500M",
+  listed: "SGX: P34",
+  website: "https://www.delfi.com",
+  linkedin: "https://www.linkedin.com/company/delfi-limited",
+  sapAngle: "Confectionery manufacturer across Indonesia and Singapore — SAP for manufacturing and distribution",
+  priority: "MED",
+  decisionMakers: [
+    { name: "John Chuang", title: "Executive Chairman", linkedin: "" },
+    { name: "IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/delfi-limited/people/" }
+  ],
+  recentProjects: ["SilverQueen and Van Houten brand expansion", "Manufacturing digitalisation in Indonesia", "Distribution management system upgrade"],
+  whyApproach: "SGX-listed confectionery company with complex Indonesia manufacturing operations needing ERP support.",
+  entryAngle: "SAP for confectionery manufacturing; Indonesia factory ERP rollout"
+},
+{
+  id: "tee-yih-jia",
+  name: "Tee Yih Jia Food Manufacturing",
+  sector: "Food & Agriculture",
+  subsector: "Frozen Food Manufacturing",
+  employees: "~2,000",
+  hq: "Jurong Industrial Estate, Singapore",
+  revenue: "~SGD 300M",
+  listed: "Private",
+  website: "https://www.spring-home.com",
+  linkedin: "https://www.linkedin.com/company/tee-yih-jia",
+  sapAngle: "World's largest spring roll manufacturer — SAP for food production and global distribution",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Sam Goi", title: "Executive Chairman (Singapore's Popiah King)", linkedin: "" },
+    { name: "Operations/IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/tee-yih-jia/people/" }
+  ],
+  recentProjects: ["Spring Home brand global distribution expansion", "Factory automation in Singapore and Malaysia", "SAP for food manufacturing and export management"],
+  whyApproach: "Private food manufacturer exporting to 80+ countries. SAP for complex global food distribution management.",
+  entryAngle: "SAP MM/SD for global food distribution; SAP QM for food safety compliance (HACCP/SQF)"
+},
+{
+  id: "old-chang-kee",
+  name: "Old Chang Kee",
+  sector: "Food & Agriculture",
+  subsector: "F&B Retail Chain",
+  employees: "~900",
+  hq: "11 Woodlands Close, Singapore",
+  revenue: "~SGD 100M",
+  listed: "SGX: 5ML",
+  website: "https://www.oldchangkee.com",
+  linkedin: "https://www.linkedin.com/company/old-chang-kee",
+  sapAngle: "F&B retail chain expanding regionally — ERP for franchise and production management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Han Kee Juan", title: "CEO", linkedin: "" },
+    { name: "IT Manager", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/old-chang-kee/people/" }
+  ],
+  recentProjects: ["Expansion into Malaysia, Australia, Indonesia", "Central kitchen digital transformation", "POS and operations system upgrade"],
+  whyApproach: "Growing F&B chain with central kitchen operations. ERP for production planning and franchise management.",
+  entryAngle: "SAP for F&B retail operations; central kitchen production management"
+},
+{
+  id: "neo-group",
+  name: "Neo Group",
+  sector: "Food & Agriculture",
+  subsector: "Catering & Food Services",
+  employees: "~3,000",
+  hq: "51 Jalan Buroh, Singapore",
+  revenue: "~SGD 250M",
+  listed: "SGX: 5UJ",
+  website: "https://www.neo-group.com",
+  linkedin: "https://www.linkedin.com/company/neo-group-limited",
+  sapAngle: "Largest catering company in Singapore — SAP for large-scale food production and event management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Neo Kah Kiat", title: "Executive Chairman", linkedin: "" },
+    { name: "IT Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/neo-group-limited/people/" }
+  ],
+  recentProjects: ["Catering for SG government events and institutions", "Cloud kitchen expansion", "Central production facility digitalisation", "F&B ERP upgrade"],
+  whyApproach: "Largest SG caterer with complex production scheduling needs. SAP PP for mass food production.",
+  entryAngle: "SAP PP for catering production; SAP SD for event order management"
+},
+{
+  id: "soup-restaurant",
+  name: "Soup Restaurant Group",
+  sector: "Food & Agriculture",
+  subsector: "F&B Restaurant Chain",
+  employees: "~1,500",
+  hq: "10 Ubi Crescent, Singapore",
+  revenue: "~SGD 100M",
+  listed: "SGX: 5KI",
+  website: "https://www.souprestaurant.com.sg",
+  linkedin: "https://www.linkedin.com/company/soup-restaurant-group",
+  sapAngle: "Restaurant chain with central kitchen operations — ERP for production and retail management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Eldwin Chua", title: "CEO", linkedin: "" },
+    { name: "IT Manager", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/soup-restaurant-group/people/" }
+  ],
+  recentProjects: ["Dian Xiao Er restaurant expansion", "Online delivery platform launch", "Central kitchen modernisation"],
+  whyApproach: "Multi-brand F&B group with growing complexity — needs ERP to manage multiple restaurant brands centrally.",
+  entryAngle: "SAP for multi-brand F&B operations; production planning for central kitchen"
+},
+{
+  id: "hosen-group",
+  name: "Hosen Group",
+  sector: "Food & Agriculture",
+  subsector: "Canned Food & F&B Distribution",
+  employees: "~500",
+  hq: "19 Lor 23 Geylang, Singapore",
+  revenue: "~SGD 130M",
+  listed: "SGX: HS6",
+  website: "https://www.hosen.com.sg",
+  linkedin: "https://www.linkedin.com/company/hosen-group",
+  sapAngle: "Food distribution company — SAP for distribution management and inventory control",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Executive Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/hosen-group/people/" }
+  ],
+  recentProjects: ["Canned food brand expansion across Asia", "Distribution logistics upgrade", "ERP system for food trading management"],
+  whyApproach: "Food trading and distribution company needing ERP for complex import/export management.",
+  entryAngle: "SAP for food trading and distribution; SAP GTS for international trade compliance"
+},
+{
+  id: "straco-corporation",
+  name: "Straco Corporation",
+  sector: "Food & Agriculture",
+  subsector: "Tourism & Leisure (F&B component)",
+  employees: "~800",
+  hq: "135 Middle Road, Singapore",
+  revenue: "~SGD 80M",
+  listed: "SGX: S85",
+  website: "https://www.straco.com.sg",
+  linkedin: "https://www.linkedin.com/company/straco-corporation",
+  sapAngle: "Tourism and F&B operator — ERP for multi-entity operations management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Wu Hsioh Kwang", title: "CEO", linkedin: "" },
+    { name: "IT Manager", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/straco-corporation/people/" }
+  ],
+  recentProjects: ["Singapore Flyer operations", "Underwater World operations", "F&B and retail concession management"],
+  whyApproach: "Multi-venue operator with F&B and retail. ERP for complex multi-entity management.",
+  entryAngle: "SAP for tourism and F&B operations; multi-entity finance management"
+},
+
+// ─── ADDITIONAL FINANCIAL SERVICES ───
+{
+  id: "standard-chartered-singapore",
+  name: "Standard Chartered Singapore",
+  sector: "Financial Services",
+  subsector: "Banking — International",
+  employees: "~8,000 in SG",
+  hq: "8 Marina Boulevard, Singapore",
+  revenue: "Part of StanChart Group (USD 18B+)",
+  listed: "Part of Standard Chartered plc (LSE: STAN)",
+  website: "https://www.sc.com/sg",
+  linkedin: "https://www.linkedin.com/company/standard-chartered-bank",
+  sapAngle: "SAP for Finance, Risk, HR — Sean (CIO Group Functions) manages SAP Risk/Finance/HR/Audit tech at StanChart Singapore",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Judy Hsu", title: "CEO Singapore & ASEAN", linkedin: "https://www.linkedin.com/in/judy-hsu/" },
+    { name: "Sean (CIO Group Functions)", title: "CIO for Risk, Finance, Legal, HR, Audit SAP platforms", linkedin: "https://www.linkedin.com/company/standard-chartered-bank/people/?keywords=CIO Group Functions" }
+  ],
+  recentProjects: ["SC Ventures — digital banking innovation arm", "Mox Bank (Hong Kong digital bank)", "SAP for Group Functions (risk, finance, HR, legal, audit)", "Trust Bank Singapore (digital bank with FairPrice)", "Sustainability and ESG data platform"],
+  whyApproach: "CIO Group Functions confirmed as SAP user for Risk/Finance/HR/Audit platforms. Active innovation agenda.",
+  entryAngle: "SAP specialist for Group Functions platforms; SAP SuccessFactors for HR; AI consultation for risk management"
+},
+{
+  id: "hsbc-singapore",
+  name: "HSBC Singapore",
+  sector: "Financial Services",
+  subsector: "Banking — International",
+  employees: "~5,000 in SG",
+  hq: "21 Collyer Quay, Singapore",
+  revenue: "Part of HSBC Group (USD 30B+)",
+  listed: "Part of HSBC Holdings (LSE: HSBA)",
+  website: "https://www.hsbc.com.sg",
+  linkedin: "https://www.linkedin.com/company/hsbc",
+  sapAngle: "SAP for internal finance and HR — Singapore is APAC hub for HSBC tech operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Wong Kee Joo", title: "CEO HSBC Singapore", linkedin: "" },
+    { name: "CIO APAC", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/hsbc/people/?keywords=CIO APAC" }
+  ],
+  recentProjects: ["HSBC Singapore digital wealth management", "Orion tech platform for private banking", "SAP SuccessFactors for APAC HR", "AI-powered trade finance"],
+  whyApproach: "Major international bank with APAC tech operations in Singapore. SAP SuccessFactors for large APAC workforce.",
+  entryAngle: "SAP SuccessFactors specialist; SAP Finance for APAC operations; AI consultation"
+},
+{
+  id: "manulife-singapore",
+  name: "Manulife Singapore",
+  sector: "Financial Services",
+  subsector: "Life Insurance & Wealth Management",
+  employees: "~1,500 in SG",
+  hq: "8 Cross Street, Singapore",
+  revenue: "Part of Manulife Financial (CAD 70B+ GWP)",
+  listed: "Part of Manulife (TSX: MFC)",
+  website: "https://www.manulife.com.sg",
+  linkedin: "https://www.linkedin.com/company/manulife",
+  sapAngle: "SAP SuccessFactors for insurance workforce management across Asia",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Naveen Tahilyani", title: "CEO Asia & Global Wealth", linkedin: "" },
+    { name: "CIO Asia", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/manulife/people/?keywords=CIO Asia" }
+  ],
+  recentProjects: ["HealthFlex digital health product launch Singapore", "Manulife MOVE wellness app", "SAP SuccessFactors Asia HR transformation", "Digital distribution channel expansion"],
+  whyApproach: "Canadian insurer with active digital transformation in Asia. SAP SuccessFactors HR specialist needed.",
+  entryAngle: "SAP SuccessFactors specialist for Asia insurance workforce; AI consultation for health insurance"
+},
+{
+  id: "tokio-marine-singapore",
+  name: "Tokio Marine Singapore",
+  sector: "Financial Services",
+  subsector: "General & Life Insurance",
+  employees: "~800 in SG",
+  hq: "20 McCallum Street, Singapore",
+  revenue: "Part of Tokio Marine Group (JPY 8T+)",
+  listed: "Part of Tokio Marine Holdings (TYO: 8766)",
+  website: "https://www.tokiomarine.com/sg",
+  linkedin: "https://www.linkedin.com/company/tokio-marine-group",
+  sapAngle: "Japanese insurer with Singapore as ASEAN hub — SAP for finance and HR regional operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "MD Singapore", title: "Tokio Marine Insurance Singapore", linkedin: "https://www.linkedin.com/company/tokio-marine-group/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["ASEAN digital insurance platform", "SAP for Asia regional finance management", "Motor insurance digitalisation in Singapore"],
+  whyApproach: "Japanese insurer with active digital transformation across ASEAN. SAP for regional finance operations.",
+  entryAngle: "SAP Finance for ASEAN insurance operations; SAP SuccessFactors for regional HR"
+},
+{
+  id: "citi-singapore",
+  name: "Citi Singapore",
+  sector: "Financial Services",
+  subsector: "Banking — Global",
+  employees: "~10,000 in SG",
+  hq: "8 Marina View, Asia Square Tower 1, Singapore",
+  revenue: "Part of Citigroup (USD 78B+)",
+  listed: "Part of Citigroup (NYSE: C)",
+  website: "https://www.citibank.com.sg",
+  linkedin: "https://www.linkedin.com/company/citi",
+  sapAngle: "SAP for internal operations — Singapore is major APAC tech hub with thousands of technology roles",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Amol Gupte", title: "Head of ASEAN & Singapore CEO", linkedin: "" },
+    { name: "CIO APAC", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/citi/people/?keywords=CIO APAC" }
+  ],
+  recentProjects: ["Citi transformation programme — simplify global operations", "TTS (Treasury & Trade Solutions) digital platform", "SAP for internal finance and HR", "Singapore tech hub expansion — 3,000+ tech roles"],
+  whyApproach: "Major global bank with large Singapore tech hub. SAP for internal ops — specialist augmentation opportunity.",
+  entryAngle: "SAP SuccessFactors for large APAC workforce; SAP Finance specialist support"
+},
+{
+  id: "temasek-holdings",
+  name: "Temasek Holdings",
+  sector: "Financial Services",
+  subsector: "State Investment Company",
+  employees: "~900",
+  hq: "60B Orchard Road, Tower 2, Singapore",
+  revenue: "~SGD 389B portfolio (2024)",
+  listed: "Private (Singapore government)",
+  website: "https://www.temasek.com.sg",
+  linkedin: "https://www.linkedin.com/company/temasek",
+  sapAngle: "Singapore state investment company — SAP for internal finance and portfolio management operations",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Dilhan Pillay Sandrasegara", title: "President & CEO", linkedin: "https://www.linkedin.com/in/dilhan-pillay-sandrasegara/" },
+    { name: "CIO/Head of Technology", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/temasek/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Temasek T2023 transformation programme", "Helios investment in tech-forward companies", "GIC co-investment in AI and digital", "SAP for portfolio company reporting"],
+  whyApproach: "State investor with SAP for internal operations and portfolio reporting. Prestigious reference client.",
+  entryAngle: "SAP for investment portfolio management; SAP Finance for complex holding company operations"
+},
+{
+  id: "gic-private-limited",
+  name: "GIC Private Limited",
+  sector: "Financial Services",
+  subsector: "Sovereign Wealth Fund",
+  employees: "~1,800",
+  hq: "168 Robinson Road, Singapore",
+  revenue: "~USD 744B AUM",
+  listed: "Private (Singapore government)",
+  website: "https://www.gic.com.sg",
+  linkedin: "https://www.linkedin.com/company/gic",
+  sapAngle: "World's top sovereign wealth fund — SAP for internal finance, HR and investment operations management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Lim Chow Kiat", title: "CEO", linkedin: "" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/gic/people/?keywords=CIO" }
+  ],
+  recentProjects: ["GIC digital transformation for investment analytics", "Data and AI platform for portfolio management", "SAP for internal operations and HR"],
+  whyApproach: "Singapore sovereign wealth fund. SAP for internal ops — prestigious client, GeBIZ path available.",
+  entryAngle: "SAP SuccessFactors for investment firm HR; SAP Finance for fund operations"
+},
+{
+  id: "frasers-property",
+  name: "Frasers Property",
+  sector: "Financial Services",
+  subsector: "Real Estate Development & Management",
+  employees: "~15,000",
+  hq: "438 Alexandra Road, Singapore",
+  revenue: "~SGD 4.2B",
+  listed: "SGX: TQ5",
+  website: "https://www.frasersproperty.com",
+  linkedin: "https://www.linkedin.com/company/frasers-property",
+  sapAngle: "SAP RE-FX and S/4HANA for global real estate portfolio across residential, commercial, industrial",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Panote Sirivadhanabhakdi", title: "Group CEO", linkedin: "" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/frasers-property/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Industrial REIT expansion in Australia and Europe", "Frasers Centrepoint Trust mall digitalisation", "Smart building technology deployment", "SAP RE-FX for property management"],
+  whyApproach: "Multi-national property group with SAP RE-FX for portfolio management. Expanding industrials creates new ERP needs.",
+  entryAngle: "SAP RE-FX specialist; SAP S/4HANA for real estate fund management; smart building AI consultation"
+},
+{
+  id: "keppel-capital",
+  name: "Keppel Capital (Keppel Funds)",
+  sector: "Financial Services",
+  subsector: "Asset & Fund Management",
+  employees: "~300",
+  hq: "1 HarbourFront Avenue, Singapore",
+  revenue: "~SGD 50B AUM",
+  listed: "Part of Keppel Ltd (SGX: BN4)",
+  website: "https://www.keppelcapital.com.sg",
+  linkedin: "https://www.linkedin.com/company/keppel-capital",
+  sapAngle: "Asset manager with complex multi-fund SAP finance operations across infrastructure, real estate, private equity",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Christina Tan", title: "CEO Keppel Capital", linkedin: "https://www.linkedin.com/in/christina-tan-keppel/" },
+    { name: "IT/Finance Systems Head", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/keppel-capital/people/" }
+  ],
+  recentProjects: ["Keppel Infrastructure Trust expansion", "Keppel Real Estate Investment Fund launch", "SAP for multi-fund finance management"],
+  whyApproach: "Asset manager with growing fund count needs robust SAP for investor reporting and fund accounting.",
+  entryAngle: "SAP for fund management and investor reporting; SAP Finance specialist"
+},
+{
+  id: "schroders-singapore",
+  name: "Schroders Singapore",
+  sector: "Financial Services",
+  subsector: "Asset Management",
+  employees: "~500 in SG",
+  hq: "138 Market Street, Singapore",
+  revenue: "Part of Schroders plc (GBP 700B+ AUM)",
+  listed: "Part of Schroders plc (LSE: SDR)",
+  website: "https://www.schroders.com/sg",
+  linkedin: "https://www.linkedin.com/company/schroders",
+  sapAngle: "Global asset manager with Singapore as APAC HQ — SAP SuccessFactors for regional HR transformation",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Susan Soh", title: "CEO Singapore", linkedin: "" },
+    { name: "CIO APAC", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/schroders/people/?keywords=CIO APAC" }
+  ],
+  recentProjects: ["Schroders Capital private assets expansion in APAC", "Wealth management digital platform", "SAP SuccessFactors global HR rollout (includes APAC)"],
+  whyApproach: "UK asset manager with active global SAP SuccessFactors rollout. Singapore APAC hub needs local specialist support.",
+  entryAngle: "SAP SuccessFactors APAC rollout support; HR transformation specialist"
+},
+{
+  id: "grab-holdings",
+  name: "Grab Holdings",
+  sector: "Financial Services",
+  subsector: "Super-App — Fintech, Delivery, Mobility",
+  employees: "~10,000+",
+  hq: "3 Media Close, Singapore",
+  revenue: "~USD 2.7B (2024)",
+  listed: "NASDAQ: GRAB",
+  website: "https://www.grab.com",
+  linkedin: "https://www.linkedin.com/company/grab",
+  sapAngle: "SAP SuccessFactors for large regional workforce; AI consultation for super-app analytics and fraud detection",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Anthony Tan", title: "Group CEO & Co-Founder", linkedin: "https://www.linkedin.com/in/anthonytan/" },
+    { name: "Grace Huang", title: "Chief People Officer", linkedin: "" },
+    { name: "CTO / Head of Engineering", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/grab/people/?keywords=CTO" }
+  ],
+  recentProjects: ["GrabFin digital financial services expansion", "GrabMaps mapping platform launch", "AI/ML at scale for pricing and dispatch", "SAP SuccessFactors for Southeast Asia HR", "GrabFood and GrabPay expansion"],
+  whyApproach: "Southeast Asia's largest super-app. SAP SuccessFactors for 10,000+ regional workforce. Major AI consultation opportunity.",
+  entryAngle: "SAP SuccessFactors specialist; AI consultation for fintech/logistics analytics; technology strategy advisory"
+},
+{
+  id: "sea-group",
+  name: "Sea Limited (Shopee/Garena/SeaMoney)",
+  sector: "Financial Services",
+  subsector: "E-Commerce, Gaming & Digital Finance",
+  employees: "~50,000+",
+  hq: "1 Fusionopolis Place, Singapore",
+  revenue: "~USD 16B (2024)",
+  listed: "NYSE: SE",
+  website: "https://www.sea.com",
+  linkedin: "https://www.linkedin.com/company/sea-limited",
+  sapAngle: "SAP SuccessFactors for massive regional workforce; AI and technology consultation for scale operations",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Forrest Li", title: "Chairman & CEO", linkedin: "" },
+    { name: "Chief People Officer", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/sea-limited/people/?keywords=People Officer" },
+    { name: "CTO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/sea-limited/people/?keywords=CTO" }
+  ],
+  recentProjects: ["Shopee APAC and LATAM e-commerce operations", "SeaMoney digital financial services across SEA", "Garena gaming platform", "AI for e-commerce recommendation and fraud detection", "SAP SuccessFactors for 50,000+ employee HR"],
+  whyApproach: "Singapore's most valuable tech company. Massive workforce needs sophisticated HR systems. AI consultation at scale.",
+  entryAngle: "SAP SuccessFactors for 50,000+ employee HR; AI and technology consultation; data analytics advisory"
+},
+
+// ─── FINAL BATCH: MANUFACTURING, CHEMICALS, ENERGY, PHARMA, REAL ESTATE ───
+{
+  id: "shell-singapore",
+  name: "Shell Singapore",
+  sector: "Manufacturing",
+  subsector: "Energy & Petrochemicals",
+  employees: "~3,200 in SG",
+  hq: "Shell House, 11 North Buona Vista Drive, Singapore",
+  revenue: "Part of Shell plc (USD 316B)",
+  listed: "Part of Shell plc (LSE: SHEL)",
+  website: "https://www.shell.com.sg",
+  linkedin: "https://www.linkedin.com/company/shell",
+  sapAngle: "SAP S/4HANA global deployment — Singapore Pulau Bukom largest Shell refinery in world needing SAP PM/PP",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Goh Swee Chen", title: "Chairman Shell Singapore", linkedin: "https://www.linkedin.com/in/goh-swee-chen/" },
+    { name: "VP Technology Singapore", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/shell/people/?keywords=CIO Singapore" }
+  ],
+  recentProjects: ["Shell Energy Transition accelerator in Singapore", "SAP S/4HANA global programme (Project Skylight)", "Bukom refinery digital twin deployment", "Lubricant manufacturing digitalisation", "Carbon capture and storage R&D"],
+  whyApproach: "Shell's global SAP S/4HANA programme (Project Skylight) includes Singapore operations. Specialist support for world's largest Shell refinery.",
+  entryAngle: "SAP PM for refinery maintenance; SAP PP for petrochemical production; S/4HANA specialist augmentation"
+},
+{
+  id: "exxonmobil-singapore",
+  name: "ExxonMobil Singapore",
+  sector: "Manufacturing",
+  subsector: "Oil Refining & Petrochemicals",
+  employees: "~2,500 in SG",
+  hq: "1 HarbourFront Place, Singapore",
+  revenue: "Part of ExxonMobil (USD 398B)",
+  listed: "Part of ExxonMobil (NYSE: XOM)",
+  website: "https://www.exxonmobilchemical.com/singapore",
+  linkedin: "https://www.linkedin.com/company/exxonmobil",
+  sapAngle: "SAP for complex petrochemical manufacturing at Jurong Island — SAP PP-PI, QM, EHS critical",
+  priority: "MED",
+  decisionMakers: [
+    { name: "VP Operations Singapore", title: "Largest integrated petrochemical complex outside US", linkedin: "https://www.linkedin.com/company/exxonmobil/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["Jurong Island chemical complex expansion", "SAP PP-PI for process manufacturing", "EHS management system upgrade", "Carbon reduction programme"],
+  whyApproach: "Massive petrochemical complex using SAP process manufacturing. Specialist PP-PI and EHS expertise needed.",
+  entryAngle: "SAP PP-PI for process manufacturing; SAP EHS for Jurong Island chemical compliance"
+},
+{
+  id: "pfizer-singapore",
+  name: "Pfizer Singapore",
+  sector: "Manufacturing",
+  subsector: "Pharmaceutical Manufacturing",
+  employees: "~2,000 in SG",
+  hq: "80 Pasir Panjang Road, Singapore",
+  revenue: "Part of Pfizer (USD 58B globally)",
+  listed: "Part of Pfizer Inc (NYSE: PFE)",
+  website: "https://www.pfizer.com.sg",
+  linkedin: "https://www.linkedin.com/company/pfizer",
+  sapAngle: "SAP for pharmaceutical manufacturing — GTP, QM, serialisation and regulatory compliance critical",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Regional President APAC", title: "Pfizer APAC", linkedin: "" },
+    { name: "Site IT Lead Singapore", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/pfizer/people/?keywords=IT Singapore" }
+  ],
+  recentProjects: ["Pfizer mRNA vaccine manufacturing capacity in Singapore", "SAP for pharmaceutical GxP compliance", "Supply chain digitalisation for global vaccine distribution", "AI for drug discovery in Singapore R&D hub"],
+  whyApproach: "Global pharma manufacturing critical site in Singapore. SAP GxP compliance and supply chain management are non-negotiable.",
+  entryAngle: "SAP PP-PI for pharmaceutical manufacturing; SAP QM for GxP compliance; SAP GTS for global supply chain"
+},
+{
+  id: "abbott-singapore",
+  name: "Abbott Singapore",
+  sector: "Manufacturing",
+  subsector: "Medical Devices & Nutrition",
+  employees: "~3,500 in SG",
+  hq: "10 Science Park Road, Singapore",
+  revenue: "Part of Abbott (USD 20B+)",
+  listed: "Part of Abbott Laboratories (NYSE: ABT)",
+  website: "https://www.abbott.com.sg",
+  linkedin: "https://www.linkedin.com/company/abbott",
+  sapAngle: "SAP for medical device and nutrition manufacturing — quality modules and regulatory compliance",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Site Director Singapore", title: "Abbott Singapore", linkedin: "" },
+    { name: "Site IT Manager", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/abbott/people/?keywords=IT Singapore" }
+  ],
+  recentProjects: ["Pediatric nutrition manufacturing expansion", "Medical device quality system upgrade", "SAP for manufacturing and quality management", "Digital supply chain for Asia Pacific"],
+  whyApproach: "Major pharma/nutrition manufacturer in Singapore's science hub. SAP QM and supply chain expertise needed.",
+  entryAngle: "SAP QM for medical device compliance; SAP PP for nutrition manufacturing; supply chain integration"
+},
+{
+  id: "dyson-singapore",
+  name: "Dyson Singapore",
+  sector: "Manufacturing",
+  subsector: "Consumer Electronics & Technology",
+  employees: "~3,000 in SG (global HQ)",
+  hq: "St. James Power Station, 3 Sentosa Gateway, Singapore",
+  revenue: "~GBP 7.1B globally",
+  listed: "Private (James Dyson)",
+  website: "https://www.dyson.com.sg",
+  linkedin: "https://www.linkedin.com/company/dyson",
+  sapAngle: "Global HQ moved to Singapore — SAP for product development, supply chain and global operations from SG",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Roland Krueger", title: "CEO", linkedin: "" },
+    { name: "CIO / Head of IT", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/dyson/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Global HQ relocation to Singapore from UK (2019)", "Dyson EV project (cancelled but large tech investment)", "Singapore R&D campus at Undercroft", "SAP for global supply chain management", "AI for product innovation"],
+  whyApproach: "Global company HQ-ed in Singapore with complex global SAP estate managed from here. Major opportunity.",
+  entryAngle: "SAP supply chain specialist; SAP SD for global product distribution; AI consultation for R&D"
+},
+{
+  id: "honeywell-singapore",
+  name: "Honeywell Singapore",
+  sector: "Manufacturing",
+  subsector: "Industrial Technology & Automation",
+  employees: "~2,500 in SG",
+  hq: "Honeywell Tower, 17 Changi Business Park Central 1, Singapore",
+  revenue: "Part of Honeywell (USD 36B)",
+  listed: "Part of Honeywell (NASDAQ: HON)",
+  website: "https://www.honeywell.com/sg",
+  linkedin: "https://www.linkedin.com/company/honeywell",
+  sapAngle: "SAP for industrial technology operations — Singapore is APAC tech hub with manufacturing and services",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Vimal Kapur", title: "CEO Honeywell (Global)", linkedin: "" },
+    { name: "APAC President", title: "Honeywell APAC", linkedin: "https://www.linkedin.com/company/honeywell/people/?keywords=APAC President" }
+  ],
+  recentProjects: ["Honeywell Connected Enterprise — industrial IoT", "SAP S/4HANA global rollout including Singapore", "Building automation and smart infrastructure", "Cybersecurity solutions for critical infrastructure"],
+  whyApproach: "Global industrial tech company with active SAP global programme. Singapore APAC hub needs regional support.",
+  entryAngle: "SAP specialist for APAC operations; SAP PM for industrial services; AI consultation for industrial IoT"
+},
+{
+  id: "jgc-singapore",
+  name: "JGC Singapore",
+  sector: "Manufacturing",
+  subsector: "Engineering & Construction",
+  employees: "~1,200 in SG",
+  hq: "1 Raffles Place, Singapore",
+  revenue: "Part of JGC Holdings (JPY 600B+)",
+  listed: "Part of JGC Holdings (TYO: 1963)",
+  website: "https://www.jgc.com",
+  linkedin: "https://www.linkedin.com/company/jgc-corporation",
+  sapAngle: "Japanese EPC company with SAP PS for large-scale engineering project management in Singapore",
+  priority: "MED",
+  decisionMakers: [
+    { name: "MD Singapore", title: "JGC Singapore", linkedin: "https://www.linkedin.com/company/jgc-corporation/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["Jurong Island chemical plant projects", "LNG terminal construction", "SAP PS for project cost and schedule management", "Hydrogen infrastructure projects"],
+  whyApproach: "Japanese engineering company with SAP PS for complex project management. Singapore office manages regional projects.",
+  entryAngle: "SAP PS specialist for engineering projects; SAP PM for plant maintenance contracts"
+},
+{
+  id: "kuehne-nagel-singapore",
+  name: "Kuehne+Nagel Singapore",
+  sector: "Logistics",
+  subsector: "Sea & Air Freight, Contract Logistics",
+  employees: "~2,000 in SG",
+  hq: "151 Lorong Chuan, Singapore",
+  revenue: "Part of Kuehne+Nagel (CHF 23B)",
+  listed: "Part of Kuehne+Nagel International (SWX: KNIN)",
+  website: "https://home.kuehne-nagel.com/singapore",
+  linkedin: "https://www.linkedin.com/company/kuehne-nagel",
+  sapAngle: "SAP TM for freight forwarding — global logistics company with Singapore as APAC hub",
+  priority: "MED",
+  decisionMakers: [
+    { name: "APAC Regional MD", title: "Kuehne+Nagel APAC", linkedin: "https://www.linkedin.com/company/kuehne-nagel/people/?keywords=APAC" }
+  ],
+  recentProjects: ["myKN digital freight platform rollout", "Pharma cold chain expansion in Singapore", "SAP TM global deployment", "E-commerce fulfilment growth"],
+  whyApproach: "Swiss global logistics leader with active SAP TM programme. Singapore as APAC hub needs specialist support.",
+  entryAngle: "SAP TM specialist; SAP EWM for contract logistics; cold chain module expertise"
+},
+{
+  id: "dsv-singapore",
+  name: "DSV Singapore",
+  sector: "Logistics",
+  subsector: "Air, Sea & Road Freight",
+  employees: "~1,500 in SG",
+  hq: "3 Changi Business Park Vista, Singapore",
+  revenue: "Part of DSV A/S (DKK 150B+)",
+  listed: "Part of DSV A/S (OMX: DSV)",
+  website: "https://www.dsv.com/en-sg",
+  linkedin: "https://www.linkedin.com/company/dsv-global-transport-and-logistics",
+  sapAngle: "Post-Panalpina acquisition SAP integration — one of largest logistics SAP integration projects",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Jens Bjørn Andersen", title: "Group CEO", linkedin: "" },
+    { name: "APAC IT Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/dsv-global-transport-and-logistics/people/?keywords=CIO APAC" }
+  ],
+  recentProjects: ["Panalpina and Agility acquisitions integration", "DSV OneIT — global SAP S/4HANA programme", "Singapore air freight hub expansion", "E-commerce logistics growth"],
+  whyApproach: "Danish logistics giant in massive SAP integration programme post multiple acquisitions. Singapore needs APAC specialist.",
+  entryAngle: "SAP S/4HANA integration support; TM for freight; APAC rollout augmentation"
+},
+{
+  id: "expeditors-singapore",
+  name: "Expeditors Singapore",
+  sector: "Logistics",
+  subsector: "Freight Forwarding",
+  employees: "~800 in SG",
+  hq: "10 Changi South Street 3, Singapore",
+  revenue: "Part of Expeditors (USD 17B)",
+  listed: "Part of Expeditors International (NASDAQ: EXPD)",
+  website: "https://www.expeditors.com/singapore",
+  linkedin: "https://www.linkedin.com/company/expeditors",
+  sapAngle: "US freight forwarder with Singapore as APAC gateway — proprietary systems but evaluating SAP TM",
+  priority: "MED",
+  decisionMakers: [
+    { name: "District Manager Singapore", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/expeditors/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["Air freight expansion for semiconductor supply chain", "Technology platform modernisation", "Supply chain visibility tools for customers"],
+  whyApproach: "Major US freight forwarder expanding in Singapore. Tech modernisation creates SAP opportunity.",
+  entryAngle: "SAP TM for freight management; technology consultation for logistics transformation"
+},
+{
+  id: "jtc-corporation",
+  name: "JTC Corporation",
+  sector: "Manufacturing",
+  subsector: "Government — Industrial Infrastructure",
+  employees: "~1,800",
+  hq: "The JTC Summit, 8 Jurong Town Hall Road, Singapore",
+  revenue: "~SGD 1.8B",
+  listed: "Government statutory body",
+  website: "https://www.jtc.gov.sg",
+  linkedin: "https://www.linkedin.com/company/jtc-corporation",
+  sapAngle: "Manages Singapore's industrial estates — SAP for asset management, property, finance and HR",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Ng Lang", title: "CEO JTC Corporation", linkedin: "" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/jtc-corporation/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Jurong Lake District masterplan infrastructure", "Advanced Manufacturing Cluster development", "SAP for estate management and facilities", "JTC digital twin for industrial parks", "Geospatial data platform for planning"],
+  whyApproach: "Government body managing 50M+ sqm of industrial space using SAP. GeBIZ path. Major credibility builder for Intellect.",
+  entryAngle: "SAP RE-FX for industrial estate management; SAP AM for asset management; GeBIZ tender"
+},
+{
+  id: "pubsg",
+  name: "PUB Singapore (National Water Agency)",
+  sector: "Manufacturing",
+  subsector: "Government — Water Utility",
+  employees: "~3,500",
+  hq: "40 Scotts Road, Singapore",
+  revenue: "~SGD 900M",
+  listed: "Government statutory body",
+  website: "https://www.pub.gov.sg",
+  linkedin: "https://www.linkedin.com/company/pub-singapore",
+  sapAngle: "Utility operations management — SAP PM for water infrastructure, SAP HR, SAP Finance for public utility",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Goh Si Hou", title: "Chief Executive", linkedin: "" },
+    { name: "CIO/IT Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/pub-singapore/people/?keywords=CIO" }
+  ],
+  recentProjects: ["NEWater plant smart monitoring system", "Digital water management platform", "SAP PM for water treatment plant maintenance", "Predictive analytics for pipe burst prevention"],
+  whyApproach: "Singapore's water utility using SAP for complex infrastructure management. GeBIZ tender path.",
+  entryAngle: "SAP PM for utility infrastructure; SAP EAM for water asset management; GeBIZ tender"
+},
+{
+  id: "singpost",
+  name: "Singapore Post (SingPost)",
+  sector: "Logistics",
+  subsector: "Postal & Logistics Services",
+  employees: "~7,000",
+  hq: "10 Eunos Road 8, Singapore Post Centre, Singapore",
+  revenue: "~SGD 1.5B",
+  listed: "SGX: S08",
+  website: "https://www.singpost.com",
+  linkedin: "https://www.linkedin.com/company/singapore-post",
+  sapAngle: "SAP for logistics operations, parcel management, and e-commerce fulfilment transformation",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Mark Sui", title: "Group CEO", linkedin: "" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/singapore-post/people/?keywords=CIO" }
+  ],
+  recentProjects: ["E-commerce logistics transformation", "Divestment of US logistics assets", "SAP for parcel and logistics management", "Digital postal services expansion", "Last-mile delivery innovation"],
+  whyApproach: "National postal company transforming into e-commerce logistics. SAP specialist needed for complex operations change.",
+  entryAngle: "SAP TM/EWM for e-commerce logistics; SAP S/4HANA transformation support"
+},
+{
+  id: "wilmar-consultancy-services",
+  name: "Wilmar Consultancy Services (WCS)",
+  sector: "Manufacturing",
+  subsector: "SAP Consulting (Wilmar subsidiary)",
+  employees: "~200",
+  hq: "Singapore / Indonesia",
+  revenue: "Internal consulting arm",
+  listed: "Subsidiary of Wilmar International",
+  website: "https://www.wilmar-international.com",
+  linkedin: "https://sg.linkedin.com/company/wilmar-consultancy-services",
+  sapAngle: "PARTNER OPPORTUNITY — Wilmar's own SAP consultancy. Partner with WCS to deliver SAP services across Wilmar's 500+ entities",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Head of WCS", title: "Wilmar SAP Practice Lead", linkedin: "https://sg.linkedin.com/company/wilmar-consultancy-services/people/" }
+  ],
+  recentProjects: ["SAP implementations across Wilmar's 500+ entities", "S/4HANA rollout coordination for SEA", "SAP support and AMS for Wilmar group"],
+  whyApproach: "UNIQUE OPPORTUNITY: Partner with Wilmar's own SAP consultancy to augment their capacity. Gives access to Wilmar's entire portfolio AND positions Intellect as a WCS-approved partner.",
+  entryAngle: "Partnership / sub-contracting arrangement with WCS; SAP specialist augmentation for their rollouts"
+},
+{
+  id: "ntuc-enterprise",
+  name: "NTUC Enterprise",
+  sector: "Food & Agriculture",
+  subsector: "Co-operative Social Enterprise Holding",
+  employees: "~20,000 across subsidiaries",
+  hq: "1 Marina Boulevard, Singapore",
+  revenue: "~SGD 5B+ across group",
+  listed: "Co-operative (non-profit)",
+  website: "https://ntuc.org.sg",
+  linkedin: "https://www.linkedin.com/company/ntuc-enterprise",
+  sapAngle: "Holding company for FairPrice, Income, Comfort, Foodfare — SAP consolidation across social enterprises",
+  priority: "HIGH",
+  decisionMakers: [
+    { name: "Seah Kian Peng", title: "Group CEO", linkedin: "" },
+    { name: "Johnny Wong", title: "Group CDTO (FairPrice + NTUC Enterprise)", linkedin: "https://www.linkedin.com/in/johnny-wong-sg/" }
+  ],
+  recentProjects: ["NTUC Income demutualisation and digitisation", "FairPrice digital transformation (Johnny Wong CDTO)", "NTUC Foodfare central kitchen digitalisation", "ComfortDelGro EV transition", "Integrated digital loyalty across NTUC brands"],
+  whyApproach: "NTUC group controls FairPrice, Income insurance, ComfortDelGro — one relationship can unlock multiple entities.",
+  entryAngle: "SAP for NTUC group consolidation; SuccessFactors for 20,000+ workforce across social enterprises"
+},
+{
+  id: "lta-singapore",
+  name: "LTA (Land Transport Authority)",
+  sector: "Logistics",
+  subsector: "Government — Transport Infrastructure",
+  employees: "~6,500",
+  hq: "1 Hampshire Road, Singapore",
+  revenue: "~SGD 3B (government budget)",
+  listed: "Government statutory body",
+  website: "https://www.lta.gov.sg",
+  linkedin: "https://www.linkedin.com/company/land-transport-authority",
+  sapAngle: "SAP for large infrastructure project management (SAP PS), asset management and HR for 6,500 staff",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Ng Lang", title: "Chief Executive LTA", linkedin: "" },
+    { name: "CIO/IT Director", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/land-transport-authority/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Thomson-East Coast MRT Line construction", "Jurong Regional Line development", "ERP system for project cost management", "Active Mobility regulatory systems", "EV infrastructure rollout across Singapore"],
+  whyApproach: "Major government infrastructure agency with large SAP PS and AM footprint. GeBIZ tender path.",
+  entryAngle: "SAP PS for infrastructure project management; SAP AM for MRT assets; GeBIZ procurement"
+},
+{
+  id: "dnata-singapore",
+  name: "Dnata Singapore",
+  sector: "Logistics",
+  subsector: "Aviation Services & Catering",
+  employees: "~3,000 in SG",
+  hq: "Changi Airport, Singapore",
+  revenue: "Part of Emirates Group (AED 40B+)",
+  listed: "Part of Emirates Group (Dubai)",
+  website: "https://www.dnata.com/sg",
+  linkedin: "https://www.linkedin.com/company/dnata",
+  sapAngle: "Aviation ground handling and catering — SAP for operations management at Changi Airport",
+  priority: "MED",
+  decisionMakers: [
+    { name: "MD Singapore", title: "Dnata Singapore", linkedin: "https://www.linkedin.com/company/dnata/people/?keywords=Singapore" }
+  ],
+  recentProjects: ["Changi Airport ground handling expansion", "Aviation catering digitalisation", "SAP for catering production management", "Cargo handling technology upgrade"],
+  whyApproach: "Aviation services company at world's best airport. SAP for complex ground operations and catering production.",
+  entryAngle: "SAP for aviation catering production; SAP operations management for ground handling"
+},
+{
+  id: "starhub",
+  name: "StarHub",
+  sector: "Manufacturing",
+  subsector: "Telecommunications",
+  employees: "~4,500",
+  hq: "67 Ubi Avenue 1, Singapore",
+  revenue: "~SGD 2.4B",
+  listed: "SGX: CC3",
+  website: "https://www.starhub.com",
+  linkedin: "https://www.linkedin.com/company/starhub",
+  sapAngle: "SAP for telco operations — enterprise billing, HR, and network asset management",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Nikhil Eapen", title: "CEO", linkedin: "https://www.linkedin.com/in/nikhil-eapen-starhub/" },
+    { name: "Group CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/starhub/people/?keywords=CIO" }
+  ],
+  recentProjects: ["Dare+ transformation programme (3-year digital plan)", "Cybersecurity managed services expansion", "SAP for enterprise operations", "5G private network solutions", "M&E and enterprise ICT growth"],
+  whyApproach: "SGX telco in active transformation. SAP for HR and finance. Cybersecurity practice creates AI consultation opportunity.",
+  entryAngle: "SAP SuccessFactors for HR; SAP Finance upgrade; AI consultation for network operations"
+},
+{
+  id: "m1-limited",
+  name: "M1 Limited",
+  sector: "Manufacturing",
+  subsector: "Telecommunications",
+  employees: "~1,500",
+  hq: "10 International Business Park, Singapore",
+  revenue: "~SGD 1.1B",
+  listed: "Part of Keppel (SGX: BN4)",
+  website: "https://www.m1.com.sg",
+  linkedin: "https://www.linkedin.com/company/m1",
+  sapAngle: "SAP for telco operations — Keppel subsidiary with active digital transformation under CEO Manjot Singh Mann",
+  priority: "MED",
+  decisionMakers: [
+    { name: "Manjot Singh Mann", title: "CEO M1 & Keppel Connectivity (former Keppel CDO)", linkedin: "https://www.linkedin.com/in/manjot-singh-mann/" },
+    { name: "CIO", title: "Search LinkedIn", linkedin: "https://www.linkedin.com/company/m1/people/?keywords=CIO" }
+  ],
+  recentProjects: ["5G network rollout across Singapore", "Enterprise connectivity solutions expansion", "M1 digital products for SMEs", "SAP system modernisation as Keppel subsidiary"],
+  whyApproach: "CEO Manjot Singh Mann is former Keppel CDO — highly tech-forward leader. Keppel group SAP integration opportunity.",
+  entryAngle: "SAP for telco enterprise operations; AI consultation for network management; Keppel group synergy"
 }
 ];
