@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Target Accounts | Intellect SG Plan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .search-box { width: 100%; padding: 0.75rem 1rem; border: 2px solid var(--gray-200); border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; margin-bottom: 1.5rem; }
+  .search-box:focus { border-color: var(--gold); }
+  tr.hidden { display: none; }
+  .tier-header { background: var(--navy); color: var(--white); padding: 0.6rem 1.25rem; font-weight: 700; font-size: 0.85rem; }
+  .section-title { font-size: 1.3rem; font-weight: 800; color: var(--navy); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 3px solid var(--gold); display: inline-block; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Intellect <span>| SG Expansion Plan 2025</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="month1.html">Month 1</a></li>
+      <li><a href="month2.html">Month 2</a></li>
+      <li><a href="month3.html">Month 3</a></li>
+      <li><a href="targets.html" class="active">Target Accounts</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">☰</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">Master Prospect List</div>
+  <h1>Singapore <span>Target Accounts</span></h1>
+  <p>Every company Intellect should reach in Singapore — organized by tier, sector, and priority. Search, filter, and export.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="stats-grid">
+      <div class="stat-card"><div class="num">60+</div><div class="lbl">Total Targets</div></div>
+      <div class="stat-card"><div class="num">35</div><div class="lbl">Tier 1 Direct Clients</div></div>
+      <div class="stat-card"><div class="num">8</div><div class="lbl">SI Partners</div></div>
+      <div class="stat-card"><div class="num">6</div><div class="lbl">Government Orgs</div></div>
+      <div class="stat-card"><div class="num">8</div><div class="lbl">AI Targets</div></div>
+    </div>
+
+    <input class="search-box" id="searchBox" type="text" placeholder="🔍  Search by company, sector, or SAP angle..." oninput="filterTable()">
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" onclick="filterByTier('all', this)">All</button>
+      <button class="filter-btn" onclick="filterByTier('tier1', this)">Tier 1 — Direct Clients</button>
+      <button class="filter-btn" onclick="filterByTier('si', this)">SI Partners</button>
+      <button class="filter-btn" onclick="filterByTier('gov', this)">Government</button>
+      <button class="filter-btn" onclick="filterByTier('ai', this)">AI Targets</button>
+      <button class="filter-btn" onclick="filterByTier('high', this)">🔴 High Priority</button>
+      <button class="filter-btn" style="margin-left:auto;background:var(--gold);color:var(--navy);border-color:var(--gold);" onclick="exportCSV()">⬇ Export CSV</button>
+    </div>
+
+    <!-- TIER 1 -->
+    <div class="section-title">🔴 Tier 1 — Direct Client Targets</div>
+
+    <div class="table-wrap">
+      <table id="mainTable">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Sector</th>
+            <th>SAP Angle</th>
+            <th>Contact Role</th>
+            <th>Priority</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Manufacturing -->
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="high">
+            <td class="td-company">ST Engineering</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">S/4HANA multi-BU rollout, complex multi-subsidiary SAP estate</td>
+            <td>CIO / Group Head of IT</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="high">
+            <td class="td-company">Sembcorp Industries</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">Multi-country SAP, energy sector vertical, RISE with SAP candidate</td>
+            <td>VP Digital / CTO</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="med">
+            <td class="td-company">Venture Corporation</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">SAP manufacturing modules (PP, QM, MM), electronics MNC</td>
+            <td>IT Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="high">
+            <td class="td-company">Keppel Corporation</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">Post-restructuring ERP consolidation, S/4HANA modernization</td>
+            <td>Group Digital Lead / CIO</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="med">
+            <td class="td-company">Flex Ltd (Singapore HQ)</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">Global EMS, S/4HANA global rollout support across regions</td>
+            <td>Regional IT Lead</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="manufacturing" data-priority="med">
+            <td class="td-company">Jardine Cycle & Carriage</td>
+            <td><span class="tag tag-mfg">Manufacturing</span></td>
+            <td class="td-angle">Auto/industrial conglomerate, SAP upgrades and regional rollouts</td>
+            <td>CFO / IT Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <!-- Logistics -->
+          <tr data-tier="tier1" data-sector="logistics" data-priority="high">
+            <td class="td-company">PSA International</td>
+            <td><span class="tag tag-log">Logistics</span></td>
+            <td class="td-angle">SAP TM, EWM — world's 2nd largest port operator, complex SAP integration</td>
+            <td>Head of IT Innovation</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="logistics" data-priority="high">
+            <td class="td-company">CWT Pte Ltd</td>
+            <td><span class="tag tag-log">Logistics</span></td>
+            <td class="td-angle">SAP WM → EWM migration, warehousing — Intellect's core vertical match</td>
+            <td>COO / IT Head</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="logistics" data-priority="high">
+            <td class="td-company">DB Schenker Singapore</td>
+            <td><span class="tag tag-log">Logistics</span></td>
+            <td class="td-angle">Regional APAC HQ, active S/4HANA transformation, logistics modules</td>
+            <td>Regional IT Director</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="logistics" data-priority="med">
+            <td class="td-company">DACHSER Singapore</td>
+            <td><span class="tag tag-log">Logistics</span></td>
+            <td class="td-angle">European logistics MNC, SAP rollout support</td>
+            <td>Country IT Head</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="logistics" data-priority="med">
+            <td class="td-company">GKE Corporation</td>
+            <td><span class="tag tag-log">Logistics</span></td>
+            <td class="td-angle">SGX-listed logistics, growing SAP implementation needs</td>
+            <td>CTO / COO</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <!-- Food & Agri -->
+          <tr data-tier="tier1" data-sector="food" data-priority="high">
+            <td class="td-company">Wilmar International</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">SGX-listed agri giant, 500+ entities, multi-country SAP rollouts — perfect fit</td>
+            <td>Group CIO</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="food" data-priority="high">
+            <td class="td-company">Olam Group</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">Food ingredients & agri, S/4HANA consolidation across global ops</td>
+            <td>VP IT / CIO</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="food" data-priority="high">
+            <td class="td-company">Thai Beverage (ThaiBev)</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">Brewery/beverages regional HQ — direct match with Intellect brewery vertical</td>
+            <td>Group IT Director</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="food" data-priority="high">
+            <td class="td-company">Fraser & Neave (F&N)</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">F&B SGX-listed, S/4HANA upgrade + SAP support</td>
+            <td>Head of IT</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="food" data-priority="high">
+            <td class="td-company">NTUC FairPrice</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">Largest retailer in SG, SAP S/4HANA migration, digital transformation</td>
+            <td>CIO / Head of Digital</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="food" data-priority="med">
+            <td class="td-company">Sheng Siong Group</td>
+            <td><span class="tag tag-fab">Food & Agri</span></td>
+            <td class="td-angle">Growing supermarket chain, SAP implementation investment</td>
+            <td>COO / IT Head</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <!-- Financial Services -->
+          <tr data-tier="tier1" data-sector="finance" data-priority="high">
+            <td class="td-company">DBS Bank</td>
+            <td><span class="tag tag-fin">Financial</span></td>
+            <td class="td-angle">SAP SuccessFactors (HR), S/4HANA Finance — largest bank in SEA</td>
+            <td>Head of Enterprise Applications</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="finance" data-priority="high">
+            <td class="td-company">OCBC Bank</td>
+            <td><span class="tag tag-fin">Financial</span></td>
+            <td class="td-angle">Active tech modernisation programme, SAP upgrades and integration</td>
+            <td>CTO / Enterprise Architect</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="finance" data-priority="med">
+            <td class="td-company">Prudential Singapore</td>
+            <td><span class="tag tag-fin">Financial</span></td>
+            <td class="td-angle">SAP SuccessFactors HR transformation, S/4HANA Finance</td>
+            <td>Head of IT / CTO</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="finance" data-priority="med">
+            <td class="td-company">Great Eastern</td>
+            <td><span class="tag tag-fin">Financial</span></td>
+            <td class="td-angle">Insurance, SAP implementation & support</td>
+            <td>IT Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <!-- Healthcare -->
+          <tr data-tier="tier1" data-sector="healthcare" data-priority="med">
+            <td class="td-company">SingHealth</td>
+            <td><span class="tag tag-gov">Healthcare</span></td>
+            <td class="td-angle">Largest public health cluster, SAP HR and Finance integration</td>
+            <td>Group CIO</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="healthcare" data-priority="high">
+            <td class="td-company">IHH Healthcare</td>
+            <td><span class="tag tag-gov">Healthcare</span></td>
+            <td class="td-angle">SGX-listed, regional hospitals — SAP S/4HANA rollout across multiple markets</td>
+            <td>Group IT Director</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="healthcare" data-priority="med">
+            <td class="td-company">Pfizer Singapore</td>
+            <td><span class="tag tag-gov">Healthcare</span></td>
+            <td class="td-angle">Regional pharma hub, SAP GTS, MM, PP modules</td>
+            <td>Site IT Lead</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="tier1" data-sector="healthcare" data-priority="med">
+            <td class="td-company">Abbott Singapore</td>
+            <td><span class="tag tag-gov">Healthcare</span></td>
+            <td class="td-angle">Medical devices & pharma, S/4HANA quality modules</td>
+            <td>IT Manager</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+
+          <!-- SI PARTNERS -->
+          <tr data-tier="si" data-sector="si" data-priority="high">
+            <td class="td-company">NTT DATA Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">SAP Global Strategic Service Partner, 30-year SAP relationship, sub-contracts specialists</td>
+            <td>SAP Practice Director / Delivery Manager</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="high">
+            <td class="td-company">Infosys Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">SAP Pinnacle Award winner, augmentation model, SAP CoE in Singapore</td>
+            <td>SAP CoE Lead / Practice Head</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="high">
+            <td class="td-company">Capgemini Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">SAP Platinum Partner, APAC S/4HANA CoE in Singapore, actively sub-contracts</td>
+            <td>Head of SAP Practice APAC</td>
+            <td><span class="priority-high">HIGH ⭐</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="high">
+            <td class="td-company">Wipro Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">SAP Global Service Partner, regional delivery hub, RISE with SAP focus</td>
+            <td>SAP Alliance Manager / Practice Director</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="med">
+            <td class="td-company">HCL Technologies SG</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">SAP CoE, strong Basis + AMS, growing S/4HANA practice</td>
+            <td>SAP Practice Head</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="med">
+            <td class="td-company">Deloitte Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">Big 4, largest professional services SAP in SG, strategy-led transformations</td>
+            <td>SAP Consulting Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="med">
+            <td class="td-company">DXC Technology</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">Large SAP legacy estate, AMS contracts, needs specialist support</td>
+            <td>SAP Alliance Manager</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="si" data-sector="si" data-priority="med">
+            <td class="td-company">Cognizant Singapore</td>
+            <td><span class="tag tag-ai">SI Partner</span></td>
+            <td class="td-angle">Growing SAP practice, flexible augmentation model</td>
+            <td>SAP Practice Manager</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+
+          <!-- GOVERNMENT -->
+          <tr data-tier="gov" data-sector="gov" data-priority="high">
+            <td class="td-company">GovTech Singapore</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">Runs SAP for multiple government agencies, central IT procurement authority</td>
+            <td>Head of Enterprise Applications</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Register GeBIZ First</span></td>
+          </tr>
+          <tr data-tier="gov" data-sector="gov" data-priority="med">
+            <td class="td-company">JTC Corporation</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">Industrial estate management, SAP for operations and asset management</td>
+            <td>IT Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Register GeBIZ First</span></td>
+          </tr>
+          <tr data-tier="gov" data-sector="gov" data-priority="med">
+            <td class="td-company">HDB</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">Large SAP implementation for housing management and operations</td>
+            <td>Head of IT</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Register GeBIZ First</span></td>
+          </tr>
+          <tr data-tier="gov" data-sector="gov" data-priority="med">
+            <td class="td-company">LTA</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">Transport infrastructure, SAP for asset and project management</td>
+            <td>CIO / IT Director</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Register GeBIZ First</span></td>
+          </tr>
+          <tr data-tier="gov" data-sector="gov" data-priority="med">
+            <td class="td-company">PUB</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">National Water Agency, SAP for utilities management</td>
+            <td>Head of IT</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Register GeBIZ First</span></td>
+          </tr>
+          <tr data-tier="gov" data-sector="gov" data-priority="med">
+            <td class="td-company">Ministry of Finance</td>
+            <td><span class="tag tag-gov">Government</span></td>
+            <td class="td-angle">Whole-of-government SAP finance programme</td>
+            <td>Deputy CIO</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Via GovTech</span></td>
+          </tr>
+
+          <!-- AI TARGETS -->
+          <tr data-tier="ai" data-sector="ai" data-priority="high">
+            <td class="td-company">Singapore Airlines</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">AI for ops, yield management, CX — SAP backend + AI integration opportunity</td>
+            <td>VP Digital / Head of AI</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="high">
+            <td class="td-company">Grab</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">AI/ML at scale, SAP back-office — tech & AI consultation opportunity</td>
+            <td>VP Engineering / CTO</td>
+            <td><span class="priority-high">HIGH</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="med">
+            <td class="td-company">Singtel</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">AI for network ops & enterprise services, tech consultation</td>
+            <td>Head of Enterprise IT / CTO</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="med">
+            <td class="td-company">CapitaLand</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">Property tech, AI for facilities management + SAP integration</td>
+            <td>Group CIO / Head Digital</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="med">
+            <td class="td-company">ComfortDelGro</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">Transport + fleet AI optimization, SAP integration advisory</td>
+            <td>CIO / Head of IT</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="med">
+            <td class="td-company">Mapletree</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">REIT, AI for property management and operations</td>
+            <td>Head of Technology</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="med">
+            <td class="td-company">DBS Bank (AI)</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">AI Centre of Excellence — advanced AI strategy advisory</td>
+            <td>Head of AI / Chief Data Officer</td>
+            <td><span class="priority-med">MED</span></td>
+            <td><span class="status-badge">Not Started</span></td>
+          </tr>
+          <tr data-tier="ai" data-sector="ai" data-priority="high">
+            <td class="td-company">IMDA-Listed SMEs</td>
+            <td><span class="tag tag-ai">AI Consulting</span></td>
+            <td class="td-angle">GenAI Navigator programme — SMEs with up to 50% grant for AI solutions. Warm, funded inbound leads once Intellect is pre-approved.</td>
+            <td>Business Owner / IT Lead</td>
+            <td><span class="priority-high">HIGH (Volume)</span></td>
+            <td><span class="status-badge">Register IMDA First</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem;color:var(--gray-600);font-size:0.85rem;" id="rowCount"></div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Overview</a><a href="month1.html">Month 1</a><a href="month2.html">Month 2</a><a href="month3.html">Month 3</a><a href="targets.html">Target Accounts</a><a href="https://intellectconsulting.io" target="_blank">intellectconsulting.io</a>
+  </div>
+  <p>Intellect Consulting | Singapore Expansion Plan 2025 | Confidential</p>
+</footer>
+
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+
+let currentTier = 'all';
+
+function filterByTier(tier, btn) {
+  currentTier = tier;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function filterTable() { applyFilters(); }
+
+function applyFilters() {
+  const search = document.getElementById('searchBox').value.toLowerCase();
+  const rows = document.querySelectorAll('#mainTable tbody tr');
+  let visible = 0;
+  rows.forEach(row => {
+    const tier = row.dataset.tier;
+    const priority = row.dataset.priority;
+    const text = row.textContent.toLowerCase();
+    const tierMatch = currentTier === 'all' || currentTier === tier || (currentTier === 'high' && priority === 'high');
+    const searchMatch = !search || text.includes(search);
+    if (tierMatch && searchMatch) { row.classList.remove('hidden'); visible++; }
+    else { row.classList.add('hidden'); }
+  });
+  document.getElementById('rowCount').textContent = `Showing ${visible} accounts`;
+}
+
+function exportCSV() {
+  const rows = document.querySelectorAll('#mainTable tbody tr:not(.hidden)');
+  let csv = 'Company,Sector,SAP Angle,Contact Role,Priority,Status\n';
+  rows.forEach(row => {
+    const cells = row.querySelectorAll('td');
+    const vals = Array.from(cells).map(c => '"' + c.textContent.trim().replace(/"/g, '""') + '"');
+    csv += vals.join(',') + '\n';
+  });
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'intellect-sg-targets.csv';
+  a.click(); URL.revokeObjectURL(url);
+}
+
+// Init count
+window.onload = () => applyFilters();
+</script>
+</body>
+</html>
