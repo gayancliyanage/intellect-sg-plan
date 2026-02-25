@@ -636,20 +636,19 @@ window.COMPANIES = [
   sapAngle: "Largest retailer in Singapore with SAP ERP backbone — active S/4HANA migration, digital transformation",
   priority: "HIGH",
   decisionMakers: [
-    { name: "Tan Kiat How", title: "Minister, NTUC Enterprise overseer", linkedin: "" },
-    { name: "Seah Kian Peng", title: "Group CEO NTUC Enterprise", linkedin: "" },
-    { name: "Johnny Wong", title: "Group Chief Digital & Technology Officer (CDTO)", linkedin: "https://www.linkedin.com/in/johnny-wong-sg/" },
-    { name: "Bernard Chew", title: "Former CIO FairPrice", linkedin: "" }
+    { name: "Dennis Seah", title: "Chief Digital & Technology Officer (CDTO) — NTUC Enterprise & FairPrice Group", linkedin: "https://www.linkedin.com/in/dennis-seah-5618a87/" },
+    { name: "Seah Kian Peng", title: "Group CEO, NTUC Enterprise", linkedin: "" },
+    { name: "Vipul Chawla", title: "Group CEO, FairPrice Group", linkedin: "" }
   ],
   recentProjects: [
     "FairPrice On — online grocery platform scaling",
-    "Hao Mart and Cheers convenience store digital integration",
+    "AI smart trolley trials at Punggol 'Store of Tomorrow' (2025)",
     "SAP S/4HANA migration programme",
     "AI demand forecasting and inventory management",
     "Sustainability reporting and ESG data systems"
   ],
-  whyApproach: "Johnny Wong as CDTO is highly active in digital transformation. SAP backbone for largest SG retailer — ongoing specialist need. Public case study potential.",
-  entryAngle: "SAP S/4HANA migration; SAP retail modules (IS-Retail); AI integration with SAP backend"
+  whyApproach: "Dennis Seah as CDTO (joined May 2021) is driving major cloud and data transformation. SAP backbone for Singapore's largest retailer — active S/4HANA migration and AI integration underway. Note: previous CDTO Johnny Wong moved to DFI Retail Group (Dairy Farm) as CEO DFI Digital in Aug 2021.",
+  entryAngle: "SAP S/4HANA migration; SAP IS-Retail modules; AI integration with SAP backend; cloud modernisation"
 },
 {
   id: "sats-ltd",
@@ -2130,9 +2129,9 @@ window.COMPANIES = [
   priority: "HIGH",
   decisionMakers: [
     { name: "Seah Kian Peng", title: "Group CEO", linkedin: "" },
-    { name: "Johnny Wong", title: "Group CDTO (FairPrice + NTUC Enterprise)", linkedin: "https://www.linkedin.com/in/johnny-wong-sg/" }
+    { name: "Dennis Seah", title: "Group CDTO (NTUC Enterprise + FairPrice Group)", linkedin: "https://www.linkedin.com/in/dennis-seah-5618a87/" }
   ],
-  recentProjects: ["NTUC Income demutualisation and digitisation", "FairPrice digital transformation (Johnny Wong CDTO)", "NTUC Foodfare central kitchen digitalisation", "ComfortDelGro EV transition", "Integrated digital loyalty across NTUC brands"],
+  recentProjects: ["NTUC Income demutualisation and digitisation", "FairPrice AI smart trolley Store of Tomorrow (Punggol 2025)", "NTUC Foodfare central kitchen digitalisation", "Integrated digital loyalty across NTUC brands", "Cloud and data transformation under Dennis Seah"],
   whyApproach: "NTUC group controls FairPrice, Income insurance, ComfortDelGro — one relationship can unlock multiple entities.",
   entryAngle: "SAP for NTUC group consolidation; SuccessFactors for 20,000+ workforce across social enterprises"
 },
